@@ -1,0 +1,71 @@
+:root {
+  /* Primary */
+  --primary-100: #F1E9DC;
+  --primary-200: #E1D0B4;
+  --primary-300: #CFB486;
+  --primary-400: #AE8753;
+  --primary-500: #4C5D8F;
+  --primary-600: #704E21;
+  --primary-700: #573C19;
+
+  /* Grayscale */
+  --gray-100: #f8f9fa;
+  --gray-200: #f2f4f5;
+  --gray-300: #e0e0e0;
+  --gray-400: #c7c7c7;
+  --gray-500: #999999;
+  --gray-600: #767676;
+  --gray-700: #222222;
+
+  /* font size */
+  --title-important: 40px;
+  --title-sectionKorea: 36px;
+  --title-Manuscript: 32px;
+  --title-sectionEnglish: 28px;
+  --title-thumnail: 24px;
+
+  --text-lead: 22px;
+  --text-lg: 20px;
+  --text-md: 16px;
+  --text-sm: 14px;
+  --text-table: 16px;
+
+  /* spacing */
+  --content-spacing: 120px;
+}
+
+@media screen and (max-width: 1440px) {
+  :root {
+    --title-important: 36px;
+    --title-sectionKorea: 32px;
+    --title-Manuscript: 28px;
+    --title-sectionEnglish: 24px;
+    --title-thumnail: 20px;
+
+    --text-lead: 20px;
+    --text-lg: 18px;
+    --text-md: 16px;
+    --text-sm: 14px;
+    --text-table: 14px;
+
+    --content-spacing: 120px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  :root {
+    --title-important: 32px;
+    --title-sectionKorea: 28px;
+    --title-Manuscript: 24px;
+    --title-sectionEnglish: 20px;
+    --title-thumnail: 16px;
+
+    --text-lead: 18px;
+    --text-lg: 16px;
+    --text-md: 16px;
+    --text-sm: 14px;
+    --text-table: 12px;
+
+    --content-spacing: 80px;
+  }
+}
