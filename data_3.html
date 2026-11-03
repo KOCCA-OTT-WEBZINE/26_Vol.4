@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="방송영상·OTT 트렌드 2026 Vol.3" />
+  <meta property="og:image" content="./img/assets/meta.png">
+  <title>방송영상 · OTT 트렌드</title>
+
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/detail.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6ZRLY8VY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-GH6ZRLY8VY');
+  </script>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon.png" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="./index.html" class="logo-wrap">
+        <img src="./img/assets/logo-white.png" alt="로고" class="logo" />
+      </a>
+
+      <div class="nav-right">
+        <div class="nav">
+          <a href="./index.html#spotlight" class="nav-item">스포트라이트</a>
+          <a href="./index.html#trend" class="nav-item">트렌드 하이라이트</a>
+          <a href="./index.html#people" class="nav-item">피플 인사이트</a>
+          <a href="./index.html#data-point" class="nav-item">데이터 포인트</a>
+          <a href="./index.html#global" class="nav-item">글로벌 마켓 리포트</a>
+        </div>
+
+        <button type="button" id="menu-toggle" class="header-vol-info" aria-label="메뉴 열기">
+          <span class="vol-text">2026 Vol.3 (9월호)</span>
+
+          <span class="hamburger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Fullscreen Mobile Modal -->
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="menu-header">
+        <p class="menu-title">메뉴</p>
+        <div class="menu-right">
+          <div class="vol-info">2026 Vol.3 (9월호)</div>
+          <button type="button" id="menu-close">
+            <img src="./img/assets/close.png" alt="닫기" class="close-btn" />
+          </button>
+        </div>
+      </div>
+      <div id="menu-content" class="menu-content"></div>
+    </div>
+  </header>
+
+  <!-- Detail -->
+  <div>
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <!-- 배너 영역 -->
+    <div class="spotlight-banner" style="background-image: url('./img/manuscript10/thum.png');">
+      <div class="banner-overlay"></div>
+      <div class="banner-inner">
+        <div class="banner-meta">
+          <p class="banner-number">데이터 포인트 3</p>
+        </div>
+        <p class="banner-title">
+          국내 OTT 시장의 디커플링 현상:<br class="pc-br"> 이용자 규모보다 ‘시간’을 봐야 하는 이유
+        </p>
+      </div>
+    </div>
+
+    <!-- 본문 영역 -->
+    <div>
+
+      <!-- 리드 문단 -->
+      <div class="lead-section">
+        <div class="lead-container">
+          <div class="datapoint-lead-block">
+            <p class="lead-text"><span class="quotes">“</span>최근 국내 OTT 경쟁의 무게중심이 가입자(이용자) 수에서 <span class="bodyQuotes">‘</span>이용자의 시간<span class="bodyQuotes">’</span>을 확보하는 방향으로 이동하고 있다. 2026년 5월 국내 주요 OTT에서는 사용자 점유율과 사용시간 점유율 중 어떤 지표를 기준으로 하느냐에 따라 순위가 엇갈렸고, 티빙의 2분기 첫 분기 흑자와 광고매출 성장도 <span class="bodyQuotes">‘</span>시간<span class="bodyQuotes">’</span>의 가치를 부각시키고 있다. 본 글은 이러한 현상을 <span class="bodyQuotes">‘</span>디커플링(decoupling)<span class="bodyQuotes">’</span> 관점에서 살펴보고, OTT 시장을 가입자 규모뿐 아니라 도달·재방문·사용시간을 함께 보는 복수지표로 읽을 필요성을 제안한다.<span class="quotes">”</span></p>
+
+            <p class="lead-author">글. 정애리(중앙대학교 첨단영상대학원 겸임교수)</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 메인 -->
+      <div class="main-content">
+
+
+        <!-- Section 1 -->
+        <section class="section-block">
+          <div class="subtitle-wrap">
+            <div class="subtitle-bar-desktop"></div>
+
+            <div class="subtitle-inner">
+              <div class="subtitle-bar-mobile"></div>
+              <div class="subtitle-text">디커플링 현상: 이용자 수와 사용시간, 순위가 뒤집힌다</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <p class="paragraph">
+              국내 OTT 시장을 이야기할 때 가장 먼저 등장하는 수치는 가입자 규모와 월간활성이용자수(MAU)다. 해당 서비스가 얼마나 많은 사람에게 닿았는지를 보여주는 유용한 지표다. 그러나 오늘날 OTT 이용환경을 이러한 단일 수치만으로 설명하기에는 부족하다. 이용자들은 여러 OTT를 동시에 구독하고, 통신·커머스 멤버십에 포함된 서비스를 함께 이용하며, 스포츠나 특정 오리지널 콘텐츠가 있을 때만 일시적으로 앱을 켜기도 한다. KISDI 조사에서 월정액 OTT 이용자가 평균 2.52개의 유료 OTT(유튜브 프리미엄 제외)를 이용하는 것으로 나타난 것도 이러한 멀티호밍(multi-homing)이 이미 보편화됐음을 보여준다.<button
+                type="button"
+                class="note-link"
+                data-note="KISDI (2025). 2024 인터넷 동영상 콘텐츠 유통과 소비에 관한 실태조사"
+                data-url="https://kisdi.re.kr/bbs/view.do?bbsSn=114726&amp;key=m2101113055776"
+                aria-label="1번 주석 보기">
+                <sup>1)</sup>
+              </button><br><br>
+
+              이 지점에서 <span class="bodyQuotes">‘</span>디커플링(decoupling)<span class="bodyQuotes">’</span>이라는 개념이 유용하다. 일반적으로 디커플링은 서로 연동될 것으로 예상되는 두 현상이나 지표의 관계가 약해지거나 분리되는 상황을 뜻한다. 본 고에서는 이를 OTT에 적용해, 이용자 규모와 실제 사용시간이 동일한 비율이나 순위로 나타나지 않는 현상을 편의상 <span class="bodyQuotes">‘</span>OTT 디커플링<span class="bodyQuotes">’</span>으로 설명한다. 이용자 규모는 크지만 실제 머무는 시간은 짧은 플랫폼이 있는 반면, 이용자 규모는 상대적으로 작아도 더 자주 찾고 오래 시청하는 플랫폼이 있다는 뜻이다.<br><br>
+
+              이러한 차이가 중요한 이유는 MAU와 이용자 규모는 플랫폼이 확보한 도달(reach)의 폭을 보여주지만, 사용시간<button
+                type="button"
+                class="note-link"
+                data-note="이 글에서 &lt;span class=&quot;bodyQuotes&quot;&gt;‘&lt;/span&gt;사용시간&lt;span class=&quot;bodyQuotes&quot;&gt;’&lt;/span&gt;은 공개 데이터로 관찰할 수 있는 행동지표를 의미하며, 심리적 의미의 &lt;span class=&quot;bodyQuotes&quot;&gt;‘&lt;/span&gt;주의력(attention)&lt;span class=&quot;bodyQuotes&quot;&gt;’&lt;/span&gt; 혹은 &lt;span class=&quot;bodyQuotes&quot;&gt;‘&lt;/span&gt;몰입(immersion)&lt;span class=&quot;bodyQuotes&quot;&gt;’&lt;/span&gt;을 포함한 시간은 아님을 전제로 한다."
+                aria-label="2번 주석 보기">
+                <sup>2)</sup>
+              </button>은 이용자가 얼마나 많은 시간을 그 서비스에 배분했는지를 보여주기 때문이다. 2026년 6월 와이즈앱·리테일이 공개한 자료는 이러한 차이를 선명하게 보여준다. 넷플릭스의 사용자 점유율은 37.8%였지만 사용시간 점유율은 57.7%였다. 티빙 역시 사용자 점유율 17.8%에 비해 사용시간 점유율이 24.8%로 높았다. 반면 쿠팡플레이는 사용자 점유율 24.4%로 두 번째였지만, 사용시간 점유율은 6.5%에 그쳤다. 디즈니+와 웨이브는 사용자 점유율보다 사용시간 점유율이 낮았지만, 쿠팡플레이처럼 격차가 크지는 않았다.<button
+                type="button"
+                class="note-link"
+                data-note="와이즈앱·리테일 (2026. 6. 23). OTT 서비스 시장 연평균 6% 성장...넷플릭스 점유율 38%. (이 자료는 와이즈앱·리테일의 한국인 Android·iOS 스마트폰 사용자 표본조사에 근거한 수치이다.)"
+                data-url="https://www.wiseapp.co.kr/insight/detail/807/ott-market-share-user-rankings"
+                aria-label="3번 주석 보기">
+                <sup>3)</sup>
+              </button>
+            </p>
+
+            <div class="image-wrap">
+              <img src="./img/manuscript10/img1.jpg" alt="그림 1" class="section-image" />
+              <div class="image-caption">
+                <p><span class="text-brand">[그림 1]</span> 2026년 5월 주요 OTT의 사용자·사용시간 점유율</p>
+                <p>* 출처: 와이즈앱·리테일(2026. 6. 23.). 앞의 자료를 바탕으로 연구자 재구성</p>
+                <p>* 주: 스마트폰 앱 표본 기반. ‘점유율’은 동일 조사 내 주요 OTT 앱의 상대적 비중이며 유료가입자 점유율과 다름</p>
+              </div>
+            </div>
+
+            <p class="paragraph">
+              여기서 주목할 점은 스마트폰 앱 사용자를 기준으로 한 2위권 경쟁이다. 사용자 규모만 보면 쿠팡플레이가 티빙보다 앞서지만, 사용시간을 기준으로 보면 티빙이 쿠팡플레이를 크게 앞선다. 결국 <span class="bodyQuotes">‘</span>몇 명이 이용했는가<span class="bodyQuotes">’</span>와 <span class="bodyQuotes">‘</span>실제로 이용자들이 얼마나 머물렀는가<span class="bodyQuotes">’</span>에 따라 경쟁구도가 달라진다. OTT 사업 초기에는 가입자 확대가 성장의 원동력이었다. 즉 시장형성의 초기단계에는 신규 가입자와 MAU가 사업 성과를 비교하는 데 충분히 유용했다. 그러나 시장이 성숙하고 다중 구독이 확대될수록 이용자가 어느 서비스를 <span class="bodyQuotes">‘</span>보유하거나 이용하고 있는가<span class="bodyQuotes">’</span>보다 어느 서비스에 <span class="bodyQuotes">‘</span>시간을 쓰고 있는가<span class="bodyQuotes">’</span>가 중요해진 것이다.<br><br>
+
+              무엇보다 구독형 OTT에서는 반복 이용이 해지 가능성을 낮추는 토대가 되고, 광고형 요금제에서는 사용시간이 늘수록 광고 인벤토리와 반복 노출의 기회가 커진다. 추천 시스템 측면에서도 더 많은 시청은 장르 선호, 완주 여부, 시청 중단 시점 등 풍부한 행동 기록을 남기게 된다. 따라서 OTT 경쟁 상황을 해석할 때 도달률뿐만 아니라 이들이 얼마나 자주 들어와서 얼마 동안 체류하는지, 그 시간이 실제 수익으로 어떻게 전환되는지를 함께 살펴볼 필요가 있다. 물론 본고에서 사용된 수치는 스마트폰 앱 표본에 기반하고 있다는 한계가 있으나, 2025년 방송매체 이용행태조사에서 OTT 이용자의 주 시청기기로 스마트폰이 83.6%로 가장 높았던 점을 고려할 때,<button
+                type="button"
+                class="note-link"
+                data-note="방송미디어통신위원회 (2026). 2025 방송매체 이용행태조사 보고서"
+                data-url="https://www.kmcc.go.kr/user.do?boardId=1027&amp;boardSeq=67915&amp;dc=K02060100&amp;mode=view&amp;page=A02060100"
+                aria-label="4번 주석 보기">
+                <sup>4)</sup>
+              </button> 스마트폰 이용자 표본을 통해 플랫폼별 사용자 규모와 사용시간의 상대적 차이를 살펴보는 것은 유의미할 것이다.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="section-block">
+          <div class="subtitle-wrap">
+            <div class="subtitle-bar-desktop"></div>
+
+            <div class="subtitle-inner">
+              <div class="subtitle-bar-mobile"></div>
+              <div class="subtitle-text">
+                <span class="bodyQuotes">‘</span>사용시간 집중도<span class="bodyQuotes">’</span>가 보여주는 OTT 경쟁 구도
+              </div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <p class="paragraph">
+              사용자 규모(점유율)와 사용시간 점유율의 차이를 보다 구체적으로 비교하기 위해, 두 개의 단순 지표를 산출했다. 첫째, <span class="bodyQuotes">‘</span>디커플링 격차(D)<span class="bodyQuotes">’</span>는 사용시간 점유율에서 사용자 규모(점유율)을 뺀 값이다. 양(+)이면 이용자 비중보다 사용시간 비중이 상대적으로 크고, 음(-)이면 그 반대이다. &lt;표 1&gt;을 보면, 넷플릭스는 +19.9%p로 주요 OTT 가운데 가장 큰 양(+)의 격차를 보였고, 티빙도 +7.0%p를 기록해 이용자 규모에 비해 상대적으로 많은 사용시간을 확보한 것으로 나타났다. 반면 쿠팡플레이는 사용자 점유율에서는 넷플릭스에 이어 2위였지만, 디커플링 격차는 -17.9%p로 가장 크게 벌어졌다. 디즈니+(-3.4%p)와 웨이브(-0.7%p) 역시 사용시간 점유율이 사용자 규모(점유율)보다 낮았지만, 쿠팡플레이에 비하면 그 차이는 상대적으로 작았다. 특히 웨이브는 두 점유율 간 차이가 0에 가까워 이용자 규모와 사용시간 점유율이 비교적 비슷한 수준으로 나타났다. 결국 같은 OTT 시장 안에서도 넷플릭스와 티빙처럼 <span class="bodyQuotes">‘</span>이용자 규모(점유율)보다 사용시간 비중이 높은 플랫폼<span class="bodyQuotes">’</span>과 쿠팡플레이처럼 <span class="bodyQuotes">‘</span>넓은 이용자 기반에 비해 사용시간 비중이 낮은 플랫폼<span class="bodyQuotes">’</span>이 동시에 존재한다는 점을 확인할 수 있다.<br><br>
+
+              둘째, <span class="bodyQuotes">‘</span>사용시간 집중도(T)<span class="bodyQuotes">’</span><button
+                  type="button"
+                  class="note-link"
+                  data-note="미디어 측정에서는 도달(reach)과 사용시간(time spent)을 분리 지표로 조사하는 것은 일반적이다. Nielsen은 디지털 콘텐츠 측정에서 reach, audience 및 time spent를 측정하며, 유럽의 미디어 조사기관인 Gemius Audience 역시 reach, audience share와 별도로 share of time을 독립 측정 지표로 정의하고 있다. 본고에서는 사용자 규모와 실제 사용시간의 차이를 비교하기 위해 (가칭)‘사용시간 집중도’를 산출한 것이며, 공인된 산업표준은 아님을 밝혀둔다.<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.nielsen.com/solutions/audience-measurement/digital-content-ratings/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Nielsen, “Digital Content Ratings”&lt;/a&gt;<br>&lt;a class=&quot;is-link&quot; href=&quot;https://audience.gemius.com/en/methodology/metrics/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Gemius Audience, “Metrics”&lt;/a&gt;"
+                  aria-label="5번 주석 보기">
+                  <sup>5)</sup>
+                </button>는 사용시간 점유율을 사용자 점유율로 나눈 상대적 비율이다. 1은 두 점유율이 같은 산술적 기준점이며, 1을 초과하면 이용자 규모에 비해 상대적으로 더 많은 사용시간을 확보하고 있음을, 1보다 작으면 상대적으로 적은 사용시간을 확보하고 있음을 뜻한다.<button
+                type="button"
+                class="note-link"
+                data-note="1이 기준점이 되는 이유를 수학적으로 설명하면, 플랫폼 i의 사용자 수를 Ui, 사용시간을 Ti라고 할 때, “사용시간 집중도 = 사용시간 점유율 ÷ 사용자 점유율”을 풀어쓰면 다음과 같다.<br>&lt;img src=&quot;./img/manuscript10/note6.png&quot; alt=&quot;사용시간 집중도 설명&quot; style=&quot;display:block;width:100%;max-width:560px;height:auto;margin-top:12px;&quot;&gt;<br>1 : 사용자 점유율과 사용시간 점유율이 동일 → 이용자 규모에 비례하는 만큼의 시간을 확보<br>1 초과: 사용시간 점유율이 사용자 점유율보다 큼 → 이용자 규모에 비해 상대적으로 많은 시간을 확보<br>1 미만: 사용시간 점유율이 사용자 점유율보다 작음 → 이용자 규모에 비해 상대적으로 적은 사용시간을 확보"
+                aria-label="6번 주석 보기">
+                <sup>6)</sup>
+              </button> 즉 티빙의 사용시간 집중도 1.39는 사용자 점유율 기준으로 볼 때 사용시간 비중이 약 39% 더 큰 수준이라는 의미이다.
+            </p>
+
+            <div class="image-wrap">
+              <img src="./img/manuscript10/img2.png" alt="표 1" class="section-image" />
+              <div class="image-caption">
+                <p>
+                  <span class="text-brand"><표 1></span>
+                  2026년 5월 국내 OTT의 디커플링 격차와 사용시간 집중도
+                </p>
+
+                <div>
+                  <span style="display:inline-block; vertical-align:top;">* 출처:</span>
+                  <span style="display:inline-block; width:calc(100% - 60px);">
+                    와이즈앱·리테일(2026. 6. 23.). 앞의 자료를 바탕으로 연구자 구성
+                  </span>
+                </div>
+
+                <div>
+                  <span style="display:inline-block; vertical-align:top;">* 주:</span>
+                  <span style="display:inline-block; width:calc(100% - 60px);">
+                    디커플링 격차 D = 사용시간 점유율 − 사용자 점유율<br>
+                    사용시간 집중도 T = 사용시간 점유율 ÷ 사용자 점유율<br>
+                    기타 4사(라프텔, U+모바일tv, 왓챠, 스포티비 나우)의 사용시간 점유율은
+                    상위 5사 합계의 잔여 값으로 추정함
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <p class="paragraph">
+              하단의 [그림 2]에서 <span class="bodyQuotes">‘</span>사용시간 집중도(T)<span class="bodyQuotes">’</span>를 보면, 넷플릭스(1.53)와 티빙(1.39)은 이용자 비중에 비해 사용시간 비중이 상대적으로 높게 나타난 반면, 쿠팡플레이(0.27)는 넓은 도달에 비해 사용시간 비중이 낮은 편이다. 물론 이 결과만으로 플랫폼의 우열을 단정할 수는 없다. 쿠팡플레이는 쿠팡 와우 멤버십과 결합된 서비스라는 점에서 OTT 자체의 서비스 외에도 다른 이용자 확보 구조를 갖고 있다. 또한 프리미어리그·NBA와 같은 시즌형 스포츠 중계와 <span class="bodyQuotes">‘</span>쿠팡플레이 시리즈<span class="bodyQuotes">’</span> 같은 대형 이벤트를 통해 이용자 유입을 확대하는 전략적 강점이 있다.<button
+                type="button"
+                class="note-link"
+                data-note="쿠팡 (2025. 6. 19). 쿠팡플레이, 올 8월 &lt;span class=&quot;bodyQuotes&quot;&gt;‘&lt;/span&gt;스포츠 패스&lt;span class=&quot;bodyQuotes&quot;&gt;’&lt;/span&gt; 일반 회원 요금제 출시"
+                data-url="https://news.coupang.com/archives/54044/"
+                aria-label="7번 주석 보기">
+                <sup>7)</sup>
+              </button> 반대로 티빙은 국내 드라마·예능과 KBO처럼 반복 소비되는 콘텐츠를 중심으로 재방문과 장시간 이용을 유도하는 포트폴리오를 구축해 왔다. 핵심은 어느 모델이 더 우월하다는 것이 아니라, <span class="bodyQuotes">‘</span>유입을 만드는 힘<span class="bodyQuotes">’</span>과 <span class="bodyQuotes">‘</span>시간을 붙잡는 힘<span class="bodyQuotes">’</span>을 구분해서 해석해야 한다는 점이다.
+            </p>
+
+            <div class="image-wrap">
+              <img src="./img/manuscript10/img3.jpg" alt="그림 2" class="section-image" />
+              <div class="image-caption">
+                <p><span class="text-brand">[그림 2]</span> 도달(reach)과 집중(attention)의 디커플링 지도</p>
+                <p>* 출처: 위의 &lt;표 1&gt;의 사용시간 집중도(T)의 값을 기준으로 연구자가 구성</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="section-block">
+          <div class="subtitle-wrap">
+            <div class="subtitle-bar-desktop"></div>
+
+            <div class="subtitle-inner">
+              <div class="subtitle-bar-mobile"></div>
+              <div class="subtitle-text">티빙의 흑자 전환: ‘이용자 시간’ 확보 경쟁의 서막</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <p class="paragraph">
+              OTT 시장에서 사용시간이 중요한 이유는 <span class="bodyQuotes">‘</span>시간의 확보<span class="bodyQuotes">’</span>가 <span class="bodyQuotes">‘</span>수익<span class="bodyQuotes">’</span>으로 연결되기 때문이다. 최근 티빙의 수익 개선은 이런 맥락에서 주목할 만하다. 티빙은 2022년 매출 2,476억 원, 영업손실 약 1,192억 원을 기록했고, 2023년에는 매출 3,264억 원으로 성장했지만, 영업손실도 약 1,420억 원으로 확대됐다. 그러나 2024년 매출은 4,353억 원으로 늘었고, 영업손실은 약 710억 원으로 절반 수준까지 축소됐다.<button
+                type="button"
+                class="note-link"
+                data-note="CJ ENM (2025. 2. 12). CJ ENM 2024년 매출 5조 2,314억원 영업이익 1,045억원 달성, 사업 경쟁력 강화로 흑자 전환 성공, CJ 뉴스룸"
+                data-url="https://cjnews.cj.net/category/press-center/보도자료/page/19/?aff=9"
+                aria-label="8번 주석 보기">
+                <sup>8)</sup>
+              </button>
+            </p>
+
+            <div class="image-wrap">
+              <img src="./img/manuscript10/img4.jpg" alt="그림 3" class="section-image" />
+              <div class="image-caption">
+                <p><span class="text-brand">[그림 3]</span> 티빙 분기별 매출액·영업손익 추이</p>
+                <p>* 출처: 지인해(2026.8.26). CJ ENM 티빙 사업부 실적. 신한투자증권 제공자료</p>
+              </div>
+            </div>
+
+            <p class="paragraph">
+              분기별 흐름을 보면 변화는 더욱 뚜렷하다. 2025년 2분기 티빙 매출은 995억 원, 영업손실은 약 240억 원이었다. 2026년 1분기에도 192억 원의 영업손실을 기록했지만, 전년보다 손실 폭은 축소됐다.<button
+                type="button"
+                class="note-link"
+                data-note="아주경제 (2026. 5. 7). [컨콜] 티빙, 1분기 영업손실 192억원…전년 比 65억원↓"
+                data-url="https://www.ajunews.com/view/20260507153358953"
+                aria-label="9번 주석 보기">
+                <sup>9)</sup>
+              </button> 이어 2026년 2분기 매출은 1,407억 원으로 전년 대비 41.4% 증가했고, 영업이익은 약 60억 원으로 돌아섰다. 티빙 출범 이후 첫 분기 흑자이다.<button
+                type="button"
+                class="note-link"
+                data-note="CJ ENM (2026. 8. 6). “2분기 매출 1조 2,033억원, 영업이익 334억원…IP 경쟁력 및 플랫폼 외형 확장 통해 수익성 개선.”; CJ ENM (2026. 8. 6). 2026년 2분기 실적발표 컨퍼런스콜"
+                data-url="https://cjnews.cj.net/?p=78690"
+                aria-label="10번 주석 보기">
+                <sup>10)</sup>
+              </button><br><br>
+
+              이 변화는 <span class="bodyQuotes">‘</span>이용자 시간<span class="bodyQuotes">’</span>이라는 관점에서 흥미롭다. CJ ENM은 2분기 수익성 개선 배경으로 KBO 시즌과 오리지널 콘텐츠 흥행에 따른 순가입자·MAU 증가, 구독·광고 매출의 성장, 해외 브랜드관 매출 확대 등을 제시했다. 이용자를 한 번 유입시키는 데 그치지 않고 반복 시청과 체류를 만들어낸 뒤, 그 시간을 구독·광고·해외유통 등 매출로 연결하는 구조가 중요해지고 있음을 보여주었다. 티빙의 광고 매출 또한 2026년 1분기 전년 대비 35.3% 증가했고, 2분기에도 52% 성장했다.<button
+                type="button"
+                class="note-link"
+                data-note="CJ ENM (2026. 8. 7). IP·플랫폼 모두 잡은 CJ ENM, 글로벌 공략 속도낸다"
+                data-url="https://cjnews.cj.net/?p=78724&amp;ut"
+                aria-label="11번 주석 보기">
+                <sup>11)</sup>
+              </button> 앞서 살펴본 티빙의 사용시간 집중도와 흑자 전환을 광고매출 증가와 단순 인과관계로 연결할 수는 없지만, 이용자 시간을 확보하는 능력이 구독뿐 아니라 광고 수익화의 중요한 기반이 되고 있는 것은 분명하다.
+            </p>
+          </div>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="section-block">
+          <div class="subtitle-wrap">
+            <div class="subtitle-bar-desktop"></div>
+
+            <div class="subtitle-inner">
+              <div class="subtitle-bar-mobile"></div>
+              <div class="subtitle-text">광고형 요금제 확산과 ‘시간’의 가치</div>
+            </div>
+          </div>
+
+          <div class="section-body">
+            <p class="paragraph">
+              본고에서 살펴본 디커플링 현상은 이용자 규모가 크다고 반드시 많은 시청시간을 확보하는 것은 아니며, 이용자 규모가 작더라도 반복 방문과 장시간 시청을 통해 높은 시간 점유율을 가질 수 있음을 보여주었다. 이러한 차이는 광고형 요금제가 확산되는 오늘날의 OTT 환경에서 더욱 중요해지고 있다. KT 나스미디어의 <span class="bodyQuotes">‘</span>2026 인터넷 이용자 조사(NPR)<span class="bodyQuotes">’</span>에 따르면, OTT 구독자 조사표본(n=1,494)의 59.7%가 광고형 요금제를 이용하고 있으며, 넷플릭스 구독자와 티빙 구독자 중 광고형 요금제 이용 비중도 각각 54.2%, 53.5%로 과반을 차지했다.<button
+                type="button"
+                class="note-link"
+                data-note="KT 나스미디어 (2026). 2026 인터넷 이용자 조사(NPR)"
+                data-url="https://www.nasmedia.co.kr/정기보고서/2026-03-npr-usersurvey-insight/"
+                aria-label="12번 주석 보기">
+                <sup>12)</sup>
+              </button> 광고형 요금제가 주요 구독 방식으로 자리 잡으면서 사용시간은 단순한 체류지표를 넘어 광고 노출 기회를 확대하고 시청 데이터를 축적할 수 있는 경제적 자원으로 부상하고 있다.<br><br>
+
+              따라서 정책기관과 산업계가 앞으로 함께 고려해야 할 것은 MAU 지수가 아니라 이용자 규모, 사용시간, 재방문, 광고형 요금제 이용률, 광고매출, 크로스디바이스 시청을 연결한 복수 지표들이다. 사업자는 이용자 유입과 체류를 구분해 관리하고, 광고주는 도달 규모뿐 아니라 이용 빈도와 체류 수준까지 포함해서 매체의 가치를 판단할 필요가 있다. 정책기관 역시 OTT의 기존 방송광고 대체·보완 효과와 그 영향력을 파악하기 위해서는, 이용자 규모뿐 아니라 시청시간과 광고매출을 함께 조사하는 정례 통계체계를 마련할 필요가 있다. OTT 경쟁의 중심이 이용자 규모에서 이용시간으로 이동하고 있다면, 시장을 측정하고 평가하는 방식도 이에 맞춰 달라져야 하기 때문이다.
+            </p>
+          </div>
+        </section>
+
+
+
+        <!-- Reference List Section -->
+        <div class="reference-list">
+          <div class="reference-title">참고문헌</div>
+
+          <ol class="reference-items hanging-indent">
+            <li><a href="https://www.kmcc.go.kr/user.do?boardId=1027&boardSeq=67915&dc=K02060100&mode=view&page=A02060100" target="_blank">방송미디어통신위원회 (2026). 2025 방송매체 이용행태조사 보고서</a></li>
+            <li><a href="https://www.ajunews.com/view/20260507153358953" target="_blank">아주경제 (2026. 5. 7). [컨콜] 티빙, 1분기 영업손실 192억원…전년 比 65억원↓</a></li>
+            <li><a href="https://www.wiseapp.co.kr/insight/detail/807/ott-market-share-user-rankings" target="_blank">와이즈앱·리테일 (2026. 6. 23). OTT 서비스 시장 연평균 6% 성장...넷플릭스 점유율 38%.</a></li>
+            <li><a href="https://news.coupang.com/archives/54044/" target="_blank">쿠팡 (2025. 6. 19). 쿠팡플레이, 올 8월 ‘스포츠 패스’ 일반 회원 요금제 출시</a></li>
+            <li><a href="https://cjnews.cj.net/category/press-center/보도자료/page/19/?aff=9" target="_blank">CJ ENM (2025. 2. 12). CJ ENM 2024년 매출 5조 2,314억원 영업이익 1,045억원 달성, 사업 경쟁력 강화로 흑자 전환 성공, CJ 뉴스룸</a></li>
+            <li>CJ ENM (2026. 8. 6). “2분기 매출 1조 2,033억원, 영업이익 334억원…IP 경쟁력 및 플랫폼 외형 확장 통해 수익성 개선.”; CJ ENM (2026. 8. 6). 2026년 2분기 실적발표 컨퍼런스콜</li>
+            <li><a href="https://cjnews.cj.net/?p=78724&ut" target="_blank">CJ ENM (2026. 8. 7). IP·플랫폼 모두 잡은 CJ ENM, 글로벌 공략 속도낸다</a></li>
+            <li><a href="https://kisdi.re.kr/bbs/view.do?bbsSn=114726&key=m2101113055776" target="_blank">KISDI (2025). 2024 인터넷 동영상 콘텐츠 유통과 소비에 관한 실태조사</a></li>
+            <li><a href="https://www.nasmedia.co.kr/정기보고서/2026-03-npr-usersurvey-insight/" target="_blank">KT 나스미디어 (2026). 2026 인터넷 이용자 조사(NPR)</a></li>
+          </ol>
+        </div>
+
+
+
+        <!-- Author Profile -->
+        <div class="author-profile">
+          <img src="./img/manuscript10/profile.png" alt="정애리" class="author-img" />
+          <div class="author-info">
+            <p class="author-name">
+              정애리
+              <br class="mobile-br" />
+              <span class="author-affiliation">(중앙대학교 첨단영상대학원 겸임교수)</span>
+            </p>
+            <p class="author-description">
+              중앙대학교 언론학 박사를 받고 FSU(Florida State University)에서 박사후과정을 수료했다. 중앙대학교 예술대학원 객원교수, 중앙대학교 콘텐츠 디자인 연구소 학술연구교수, 중앙대학교 문화예술교육원 전문연구원을 역임했다. 주요 연구로 「방송콘텐츠 진흥사업 실태조사」(2025), 「콘텐츠 산업 노동환경 조사 연구」(2025), 「콘텐츠 산업 일자리 창출 방안 연구」(2024), 「방송 포맷(K-포맷) 해외 불법 복제 및 유통현황 조사」(2023), 「방송영상콘텐츠 제작산업 경쟁현황 분석 연구」(2021) 등이 있다.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Post Navigator -->
+      <div class="post-navigator">
+        <a href="./data_2.html" class="post-nav prev">
+          <div class="post-nav-header">
+            <img src="./img/assets/arrow.png" alt="화살표" class="arrow" />
+            <p>이전 글</p>
+          </div>
+          <span class="post-nav-title">글로벌 OTT의 선택이 달라졌다:<br class="pc-br"> K-콘텐츠 소비에서 K-컬처 활용으로</span>
+        </a>
+
+        <div class="post-nav-div"></div>
+
+        <div class="last-nav"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- 상단: 로고와 설명 -->
+      <div class="footer-top-wrap">
+        <div class="footer-top">
+
+          <div class="footer-logo-wrap">
+            <img src="./img/assets/kocca-logo-white.png" alt="한국콘텐츠진흥원 로고" class="footer-logo" />
+
+            <p class="footer-description">
+              &lt;방송영상·OTT 트렌드&gt;에 실린 글과 사진은 한국콘텐츠진흥원의 허가 없이 사용할 수 없으며,
+              <br class="footer-hidden" />
+              본지의 내용은 필자 개인의 의견으로 한국콘텐츠진흥원의 공식 견해가 아닙니다.
+            </p>
+          </div>
+
+          <!-- 발행 정보 -->
+          <div class="footer-info">
+            <div class="footer-info-group">
+              <div>
+                <p>발행인</p>
+                <p>김윤지(한국콘텐츠진흥원 원장)</p>
+              </div>
+              <div>
+                <p>발행일</p>
+                <p>2026년 9월 30일</p>
+              </div>
+              <div>
+                <p>발행처</p>
+                <div style="display: flex; gap:4px; flex-direction: column;">
+                  <p>한국콘텐츠진흥원</p>
+                  <p>전라남도 나주시 교육길 35</p>
+                  <p>T. 1566-1114</p>
+                  <p>https://www.kocca.kr</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-info-group">
+              <div>
+                <p>기획·편집</p>
+                <div style="display: flex; gap:4px; flex-direction: column;">
+                  <p>한국콘텐츠진흥원 정책연구본부 산업정책팀</p>
+                  <p>(주)컬쳐미디어랩</p>
+                </div>
+              </div>
+
+              <div>
+                <p>기획위원</p>
+                <div style="display: flex; gap:4px; flex-direction: column;">
+                  <p>이성민(한국방송통신대학교 미디어영상학과 부교수)</p>
+                  <p>장민지(경남대학교 미디어영상학과 조교수)</p>
+                  <p>지인해(신한투자증권 연구위원)</p>
+                </div>
+              </div>
+
+              <div>
+                <p>ISSN</p>
+                <div>
+                  <p>3091-6771(online)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-buttons">
+          <a href="./download/2026_방송영상&OTT트렌드_Vol3_PDF_최종본.pdf" class="footer-button-outline"
+            download="2026_방송영상&OTT트렌드_Vol3_PDF">2026 Vol.3 (9월호) PDF 다운받기</a>
+          <a href="https://www.kocca.kr/kocca/common/Mailling.do?menuNo=204918" target="_blank"
+            class="footer-button-filled">구독 신청하기</a>
+        </div>
+      </div>
+
+
+      <div class="footer-bottom">
+        <p>© 2026 Korea Creative Content Agency. All rights reserved.</p>
+        <img src="./img/assets/new_img_opentype04.png" alt="공공누리 제4유형 : 출처표시 + 상업적 이용금지 + 변경금지" />
+      </div>
+    </div>
+  </footer>
+
+  <!-- 상/하단 이동 버튼 -->
+  <div class="page-anchor-buttons">
+    <button type="button" class="page-anchor-btn page-top-btn" onclick="scrollToTop()" aria-label="상단으로 이동">
+      <img src="./img/assets/TopArrow.png" alt="" />
+    </button>
+
+    <button type="button" class="page-anchor-btn page-bottom-btn" onclick="scrollToBottom()" aria-label="하단으로 이동">
+      <img src="./img/assets/TopArrow.png" alt="" />
+    </button>
+  </div>
+
+  <!-- 하단 플로팅 바 -->
+  <nav class="article-floating-nav" aria-label="게시글 이동">
+    <div class="article-floating-nav-inner">
+      <a href="./data_2.html" class="floating-nav-btn prev">
+        <img src="./img/assets/arrow.png" alt="" width="24" height="24">
+        <span>이전글</span>
+      </a>
+
+      <div class="floating-issue-info">
+        <span class="issue-label">2026 Vol.3 (9월호)</span>
+      </div>
+    </div>
+  </nav>
+  <script src="./js/utils.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/note-tooltip.js"></script>
+</body>
+
+</html>
