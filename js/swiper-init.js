@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const contents = [
     {
       sectionName: "스포트라이트",
-      theme: "효율화의 시대, 제작 현장의 새로운 도전들",
+      theme: "수용자와 플랫폼",
       item: "다양한 시도로 글로벌 시장의 문을 두드린다,<br> &lt;WOWPOINT&gt; 양유민 대표",
       img: "./img/manuscript1/banner.png",
       imgMobile: "./img/manuscript1/banner-m.png",
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       sectionName: "데이터 포인트",
       theme: "",
-      item: "[2026년 3분기]<br> 데이터로 읽는 글로벌 OTT 콘텐츠 소비 취향",
+      item: "[2026년 4분기]<br> 데이터로 읽는 글로벌 OTT 콘텐츠 소비 취향",
       img: "./img/manuscript8/banner.png",
       imgMobile: "./img/manuscript8/banner-m.png",
       bgPosition: "right center",

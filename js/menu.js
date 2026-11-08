@@ -12,7 +12,13 @@ const spotlightItem = {
     ],
   },
   2: {
-    title: "AI 제작 플랫폼으로 새로운 제작 방식에 도전한다, <모피어스 스튜디오>",
+    title: "화면 밖으로 나온 콘텐츠 IP:<br>참여와 관계에서 찾는 새로운 비즈니스",
+    authors: [
+      {
+        name: "강보라",
+        affiliation: "연세대학교 커뮤니케이션연구소 전문연구원",
+      },
+    ],
   },
 };
 
@@ -75,7 +81,7 @@ const globalItem = {
 
 const dataPointItem = {
   0: {
-    title: "[2026년 3분기] 데이터로 읽는 글로벌 OTT 콘텐츠 소비 취향",
+    title: "[2026년 4분기] 데이터로 읽는 글로벌 OTT 콘텐츠 소비 취향",
   },
   1: {
     title: "글로벌 OTT의 선택이 달라졌다:<br> K-콘텐츠 소비에서 K-컬처 활용으로",
@@ -212,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const sectionDescription =
         path === "spotlight"
-          ? `<p id="menu-spotlight-subject">효율화의 시대, 제작 현장의 새로운 도전들</p>`
+          ? `<p id="menu-spotlight-subject">수용자와 플랫폼</p>`
           : "";
 
       section.innerHTML = `

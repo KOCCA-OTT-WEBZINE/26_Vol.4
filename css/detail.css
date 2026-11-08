@@ -545,13 +545,30 @@ sup {
 .image-title,
 .image-caption {
   font-size: var(--text-md);
-  color: var(--gray-500);
+  color: var(--gray-700);
   line-height: 1.4;
 
   text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+.image-caption > p:nth-child(2) {
+  color: var(--gray-500);
+}
+
+.image-caption a {
+  color: var(--gray-500);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.image-caption a:hover {
+  color: var(--gray-700);
 }
 
 .text-brand {
@@ -598,7 +615,7 @@ sup {
 }
 
 .responsive-table {
-  min-width: 320px;
+  min-width: 680px;
   width: 100%;
   border-collapse: collapse;
 }
