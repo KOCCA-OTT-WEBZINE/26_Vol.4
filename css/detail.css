@@ -545,7 +545,7 @@ sup {
 .image-title,
 .image-caption {
   font-size: var(--text-md);
-  color: var(--gray-700);
+  color: var(--gray-500);
   line-height: 1.4;
 
   text-align: justify;
@@ -554,8 +554,8 @@ sup {
   gap: 4px;
 }
 
-.image-caption > p:nth-child(2) {
-  color: var(--gray-500);
+.image-caption > p:nth-child(1) {
+  color: var(--gray-700);
 }
 
 .image-caption a {
@@ -858,7 +858,7 @@ sup {
 .post-navigator {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   background-color: var(--gray-200);
   color: var(--gray-700);
   margin-top:120px;
