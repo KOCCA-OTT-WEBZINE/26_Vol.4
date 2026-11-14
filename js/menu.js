@@ -1,6 +1,12 @@
 const spotlightItem = {
   0: {
-    title: "다양한 시도로 글로벌 시장의 문을 두드린다, <WOWPOINT> 양유민 대표",
+    title: "영상 콘텐츠를 둘러싼 플랫폼 전쟁",
+    authors: [
+      {
+        name: "김정환",
+        affiliation: "고려대학교 미디어대학 교수",
+      },
+    ],
   },
   1: {
     title: "비용효율 콘텐츠 시대: 우리는 지금 K-예능 시대에 산다!",
@@ -12,7 +18,7 @@ const spotlightItem = {
     ],
   },
   2: {
-    title: "화면 밖으로 나온 콘텐츠 IP:<br>참여와 관계에서 찾는 새로운 비즈니스",
+    title: "화면 밖으로 나온 콘텐츠 IP<br>: 참여와 관계에서 찾는 새로운 비즈니스",
     authors: [
       {
         name: "강보라",
