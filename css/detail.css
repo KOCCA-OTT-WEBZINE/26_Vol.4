@@ -1640,10 +1640,8 @@ sup {
 	display: block;
 	margin: 0;
 
-	color: #202020;
+	color: var(--gray-700);
 	font: inherit;
-	line-height: inherit;
-	text-align: left;
 
 	word-break: keep-all;
 	overflow-wrap: break-word;

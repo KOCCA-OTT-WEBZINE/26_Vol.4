@@ -1,509 +1,807 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="방송영상·OTT 트렌드 2026 Vol.4" />
-  <meta property="og:image" content="./img/assets/meta.png">
-  <title>방송영상 · OTT 트렌드</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="방송영상·OTT 트렌드 2026 Vol.4" />
+    <meta property="og:image" content="./img/assets/meta.png">
+    <title>방송영상 · OTT 트렌드</title>
 
-  <link rel="stylesheet" href="./css/variables.css" />
-  <link rel="stylesheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/detail.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/detail.css" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6ZRLY8VY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-GH6ZRLY8VY');
-  </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GH6ZRLY8VY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-GH6ZRLY8VY');
+    </script>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon.png" />
-</head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/assets/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/assets/favicon.png" />
+  </head>
 
-<body>
+  <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="./index.html" class="logo-wrap">
-        <img src="./img/assets/logo-white.png" alt="로고" class="logo" />
-      </a>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-inner">
+        <a href="./index.html" class="logo-wrap">
+          <img src="./img/assets/logo-white.png" alt="로고" class="logo" />
+        </a>
 
-      <div class="nav-right">
-        <div class="nav">
-          <a href="./index.html#spotlight" class="nav-item">스포트라이트</a>
-          <a href="./index.html#trend" class="nav-item">트렌드 하이라이트</a>
-          <a href="./index.html#people" class="nav-item">피플 인사이트</a>
-          <a href="./index.html#data-point" class="nav-item">데이터 포인트</a>
-          <a href="./index.html#global" class="nav-item">글로벌 마켓 리포트</a>
-        </div>
+        <div class="nav-right">
+          <div class="nav">
+            <a href="./index.html#spotlight" class="nav-item">스포트라이트</a>
+            <a href="./index.html#trend" class="nav-item">트렌드 하이라이트</a>
+            <a href="./index.html#people" class="nav-item">피플 인사이트</a>
+            <a href="./index.html#data-point" class="nav-item">데이터 포인트</a>
+            <a href="./index.html#global" class="nav-item">글로벌 마켓 리포트</a>
+          </div>
 
-        <button type="button" id="menu-toggle" class="header-vol-info" aria-label="메뉴 열기">
-          <span class="vol-text">2026 Vol.4 (11월호)</span>
+          <button type="button" id="menu-toggle" class="header-vol-info" aria-label="메뉴 열기">
+            <span class="vol-text">2026 Vol.4 (11월호)</span>
 
-          <span class="hamburger" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Fullscreen Mobile Modal -->
-    <div id="mobile-menu" class="mobile-menu">
-      <div class="menu-header">
-        <p class="menu-title">메뉴</p>
-        <div class="menu-right">
-          <div class="vol-info">2026 Vol.4 (11월호)</div>
-          <button type="button" id="menu-close">
-            <img src="./img/assets/close.png" alt="닫기" class="close-btn" />
+            <span class="hamburger" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
           </button>
         </div>
       </div>
-      <div id="menu-content" class="menu-content"></div>
-    </div>
-  </header>
 
-  <!-- Detail -->
-  <div>
-    <div id="progress-bar-container">
-      <div id="progress-bar"></div>
-    </div>
+      <!-- Fullscreen Mobile Modal -->
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="menu-header">
+          <p class="menu-title">메뉴</p>
 
-    <!-- 배너 영역 -->
-    <div class="spotlight-banner" style="background-image: url('./img/manuscript10/thum.png');">
-      <div class="banner-overlay"></div>
-      <div class="banner-inner">
-        <div class="banner-meta">
-          <p class="banner-number">데이터 포인트 3</p>
+          <div class="menu-right">
+            <div class="vol-info">2026 Vol.4 (11월호)</div>
+
+            <button type="button" id="menu-close">
+              <img src="./img/assets/close.png" alt="닫기" class="close-btn" />
+            </button>
+          </div>
         </div>
-        <p class="banner-title">
-          국내 OTT 시장의 디커플링 현상:<br class="pc-br"> 이용자 규모보다 ‘시간’을 봐야 하는 이유
-        </p>
+
+        <div id="menu-content" class="menu-content"></div>
       </div>
-    </div>
+    </header>
 
-    <!-- 본문 영역 -->
+    <!-- Detail -->
     <div>
+      <div id="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
 
-      <!-- 리드 문단 -->
-      <div class="lead-section">
-        <div class="lead-container">
-          <div class="datapoint-lead-block">
-            <p class="lead-text"><span class="quotes">“</span>최근 국내 OTT 경쟁의 무게중심이 가입자(이용자) 수에서 <span class="bodyQuotes">‘</span>이용자의 시간<span class="bodyQuotes">’</span>을 확보하는 방향으로 이동하고 있다. 2026년 5월 국내 주요 OTT에서는 사용자 점유율과 사용시간 점유율 중 어떤 지표를 기준으로 하느냐에 따라 순위가 엇갈렸고, 티빙의 2분기 첫 분기 흑자와 광고매출 성장도 <span class="bodyQuotes">‘</span>시간<span class="bodyQuotes">’</span>의 가치를 부각시키고 있다. 본 글은 이러한 현상을 <span class="bodyQuotes">‘</span>디커플링(decoupling)<span class="bodyQuotes">’</span> 관점에서 살펴보고, OTT 시장을 가입자 규모뿐 아니라 도달·재방문·사용시간을 함께 보는 복수지표로 읽을 필요성을 제안한다.<span class="quotes">”</span></p>
+      <!-- 배너 영역 -->
+      <div class="spotlight-banner" style="background-image: url('./img/manuscript10/thum.png');">
+        <div class="banner-overlay"></div>
+
+        <div class="banner-inner">
+          <div class="banner-meta">
+            <p class="banner-number">데이터 포인트 3</p>
+          </div>
+
+          <p class="banner-title">
+            콘텐츠보다 플랫폼인가?<br class="pc-br">: 2026년 미국 OTT 시장의 재번들링과 고객 접점 경쟁
+          </p>
+        </div>
+      </div>
+
+      <!-- 본문 영역 -->
+      <div>
+
+        <!-- 리드 문단 -->
+        <div class="lead-section">
+          <div class="lead-container">
+            <p class="lead-text">
+              <span class="bodyQuotes">“</span>케이블TV의 채널 묶음을 해체하며 성장한 OTT가 10여 년 만에 다시 <span class="bodyQuotes">‘</span>묶음<span class="bodyQuotes">’</span>으로 돌아오고 있다. 이번에 묶이는 것은 채널이 아니라 가입·결제·추천, 곧 소비자와 만나는 접점이다. 쉽게 가입하고 쉽게 떠나는 OTT 시장에서, 디즈니는 자사 서비스를 하나의 관문으로 엮고, 컴캐스트는 경쟁 OTT를 한 진열대에 올리며, 버라이존은 OTT를 통신요금제의 혜택으로 끌어들였다. 이제 중요한 것은 콘텐츠 소유를 넘어, 누가 소비자와의 관계를 주도하고 지속적인 수익으로 연결할 것인가에 있다. 본 글에서는 미국 OTT 시장을 통해 이러한 변화를 살펴보고 국내 시장에 주는 함의를 도출해 보고자 한다.<span class="bodyQuotes">”</span>
+            </p>
 
             <p class="lead-author">글. 정애리(중앙대학교 첨단영상대학원 겸임교수)</p>
           </div>
         </div>
-      </div>
 
-      <!-- 메인 -->
-      <div class="main-content">
+        <!-- 메인 -->
+        <div class="main-content">
 
-
-        <!-- Section 1 -->
-        <section class="section-block">
-          <div class="subtitle-wrap">
-            <div class="subtitle-bar-desktop"></div>
-
-            <div class="subtitle-inner">
-              <div class="subtitle-bar-mobile"></div>
-              <div class="subtitle-text">디커플링 현상: 이용자 수와 사용시간, 순위가 뒤집힌다</div>
-            </div>
-          </div>
-
-          <div class="section-body">
-            <p class="paragraph">
-              국내 OTT 시장을 이야기할 때 가장 먼저 등장하는 수치는 가입자 규모와 월간활성이용자수(MAU)다. 해당 서비스가 얼마나 많은 사람에게 닿았는지를 보여주는 유용한 지표다. 그러나 오늘날 OTT 이용환경을 이러한 단일 수치만으로 설명하기에는 부족하다. 이용자들은 여러 OTT를 동시에 구독하고, 통신·커머스 멤버십에 포함된 서비스를 함께 이용하며, 스포츠나 특정 오리지널 콘텐츠가 있을 때만 일시적으로 앱을 켜기도 한다. KISDI 조사에서 월정액 OTT 이용자가 평균 2.52개의 유료 OTT(유튜브 프리미엄 제외)를 이용하는 것으로 나타난 것도 이러한 멀티호밍(multi-homing)이 이미 보편화됐음을 보여준다.<button
-                type="button"
-                class="note-link"
-                data-note="KISDI (2025). 2024 인터넷 동영상 콘텐츠 유통과 소비에 관한 실태조사"
-                data-url="https://kisdi.re.kr/bbs/view.do?bbsSn=114726&amp;key=m2101113055776"
-                aria-label="1번 주석 보기">
-                <sup>1)</sup>
-              </button><br><br>
-
-              이 지점에서 <span class="bodyQuotes">‘</span>디커플링(decoupling)<span class="bodyQuotes">’</span>이라는 개념이 유용하다. 일반적으로 디커플링은 서로 연동될 것으로 예상되는 두 현상이나 지표의 관계가 약해지거나 분리되는 상황을 뜻한다. 본 고에서는 이를 OTT에 적용해, 이용자 규모와 실제 사용시간이 동일한 비율이나 순위로 나타나지 않는 현상을 편의상 <span class="bodyQuotes">‘</span>OTT 디커플링<span class="bodyQuotes">’</span>으로 설명한다. 이용자 규모는 크지만 실제 머무는 시간은 짧은 플랫폼이 있는 반면, 이용자 규모는 상대적으로 작아도 더 자주 찾고 오래 시청하는 플랫폼이 있다는 뜻이다.<br><br>
-
-              이러한 차이가 중요한 이유는 MAU와 이용자 규모는 플랫폼이 확보한 도달(reach)의 폭을 보여주지만, 사용시간<button
-                type="button"
-                class="note-link"
-                data-note="이 글에서 &lt;span class=&quot;bodyQuotes&quot;&gt;‘&lt;/span&gt;사용시간&lt;span class=&quot;bodyQuotes&quot;&gt;’&lt;/span&gt;은 공개 데이터로 관찰할 수 있는 행동지표를 의미하며, 심리적 의미의 &lt;span class=&quot;bodyQuotes&quot;&gt;‘&lt;/span&gt;주의력(attention)&lt;span class=&quot;bodyQuotes&quot;&gt;’&lt;/span&gt; 혹은 &lt;span class=&quot;bodyQuotes&quot;&gt;‘&lt;/span&gt;몰입(immersion)&lt;span class=&quot;bodyQuotes&quot;&gt;’&lt;/span&gt;을 포함한 시간은 아님을 전제로 한다."
-                aria-label="2번 주석 보기">
-                <sup>2)</sup>
-              </button>은 이용자가 얼마나 많은 시간을 그 서비스에 배분했는지를 보여주기 때문이다. 2026년 6월 와이즈앱·리테일이 공개한 자료는 이러한 차이를 선명하게 보여준다. 넷플릭스의 사용자 점유율은 37.8%였지만 사용시간 점유율은 57.7%였다. 티빙 역시 사용자 점유율 17.8%에 비해 사용시간 점유율이 24.8%로 높았다. 반면 쿠팡플레이는 사용자 점유율 24.4%로 두 번째였지만, 사용시간 점유율은 6.5%에 그쳤다. 디즈니+와 웨이브는 사용자 점유율보다 사용시간 점유율이 낮았지만, 쿠팡플레이처럼 격차가 크지는 않았다.<button
-                type="button"
-                class="note-link"
-                data-note="와이즈앱·리테일 (2026. 6. 23). OTT 서비스 시장 연평균 6% 성장...넷플릭스 점유율 38%. (이 자료는 와이즈앱·리테일의 한국인 Android·iOS 스마트폰 사용자 표본조사에 근거한 수치이다.)"
-                data-url="https://www.wiseapp.co.kr/insight/detail/807/ott-market-share-user-rankings"
-                aria-label="3번 주석 보기">
-                <sup>3)</sup>
-              </button>
-            </p>
-
-            <div class="image-wrap">
-              <img src="./img/manuscript10/img1.jpg" alt="그림 1" class="section-image" />
-              <div class="image-caption">
-                <p><span class="text-brand">[그림 1]</span> 2026년 5월 주요 OTT의 사용자·사용시간 점유율</p>
-                <p>* 출처: 와이즈앱·리테일(2026. 6. 23.). 앞의 자료를 바탕으로 연구자 재구성</p>
-                <p>* 주: 스마트폰 앱 표본 기반. ‘점유율’은 동일 조사 내 주요 OTT 앱의 상대적 비중이며 유료가입자 점유율과 다름</p>
+          <!-- Section 1 -->
+          <section class="section-block">
+            <div class="subtitle-wrap">
+              <div class="subtitle-bar-desktop">
+              </div>
+              <div class="subtitle-inner">
+                <div class="subtitle-bar-mobile">
+                </div>
+                <div class="subtitle-text">
+                  재번들링의 부상; 구독 피로가 바꾼 OTT 경쟁 방식
+                </div>
               </div>
             </div>
-
-            <p class="paragraph">
-              여기서 주목할 점은 스마트폰 앱 사용자를 기준으로 한 2위권 경쟁이다. 사용자 규모만 보면 쿠팡플레이가 티빙보다 앞서지만, 사용시간을 기준으로 보면 티빙이 쿠팡플레이를 크게 앞선다. 결국 <span class="bodyQuotes">‘</span>몇 명이 이용했는가<span class="bodyQuotes">’</span>와 <span class="bodyQuotes">‘</span>실제로 이용자들이 얼마나 머물렀는가<span class="bodyQuotes">’</span>에 따라 경쟁구도가 달라진다. OTT 사업 초기에는 가입자 확대가 성장의 원동력이었다. 즉 시장형성의 초기단계에는 신규 가입자와 MAU가 사업 성과를 비교하는 데 충분히 유용했다. 그러나 시장이 성숙하고 다중 구독이 확대될수록 이용자가 어느 서비스를 <span class="bodyQuotes">‘</span>보유하거나 이용하고 있는가<span class="bodyQuotes">’</span>보다 어느 서비스에 <span class="bodyQuotes">‘</span>시간을 쓰고 있는가<span class="bodyQuotes">’</span>가 중요해진 것이다.<br><br>
-
-              무엇보다 구독형 OTT에서는 반복 이용이 해지 가능성을 낮추는 토대가 되고, 광고형 요금제에서는 사용시간이 늘수록 광고 인벤토리와 반복 노출의 기회가 커진다. 추천 시스템 측면에서도 더 많은 시청은 장르 선호, 완주 여부, 시청 중단 시점 등 풍부한 행동 기록을 남기게 된다. 따라서 OTT 경쟁 상황을 해석할 때 도달률뿐만 아니라 이들이 얼마나 자주 들어와서 얼마 동안 체류하는지, 그 시간이 실제 수익으로 어떻게 전환되는지를 함께 살펴볼 필요가 있다. 물론 본고에서 사용된 수치는 스마트폰 앱 표본에 기반하고 있다는 한계가 있으나, 2025년 방송매체 이용행태조사에서 OTT 이용자의 주 시청기기로 스마트폰이 83.6%로 가장 높았던 점을 고려할 때,<button
-                type="button"
-                class="note-link"
-                data-note="방송미디어통신위원회 (2026). 2025 방송매체 이용행태조사 보고서"
-                data-url="https://www.kmcc.go.kr/user.do?boardId=1027&amp;boardSeq=67915&amp;dc=K02060100&amp;mode=view&amp;page=A02060100"
-                aria-label="4번 주석 보기">
-                <sup>4)</sup>
-              </button> 스마트폰 이용자 표본을 통해 플랫폼별 사용자 규모와 사용시간의 상대적 차이를 살펴보는 것은 유의미할 것이다.
-            </p>
-          </div>
-        </section>
-
-        <!-- Section 2 -->
-        <section class="section-block">
-          <div class="subtitle-wrap">
-            <div class="subtitle-bar-desktop"></div>
-
-            <div class="subtitle-inner">
-              <div class="subtitle-bar-mobile"></div>
-              <div class="subtitle-text">
-                <span class="bodyQuotes">‘</span>사용시간 집중도<span class="bodyQuotes">’</span>가 보여주는 OTT 경쟁 구도
-              </div>
-            </div>
-          </div>
-
-          <div class="section-body">
-            <p class="paragraph">
-              사용자 규모(점유율)와 사용시간 점유율의 차이를 보다 구체적으로 비교하기 위해, 두 개의 단순 지표를 산출했다. 첫째, <span class="bodyQuotes">‘</span>디커플링 격차(D)<span class="bodyQuotes">’</span>는 사용시간 점유율에서 사용자 규모(점유율)을 뺀 값이다. 양(+)이면 이용자 비중보다 사용시간 비중이 상대적으로 크고, 음(-)이면 그 반대이다. &lt;표 1&gt;을 보면, 넷플릭스는 +19.9%p로 주요 OTT 가운데 가장 큰 양(+)의 격차를 보였고, 티빙도 +7.0%p를 기록해 이용자 규모에 비해 상대적으로 많은 사용시간을 확보한 것으로 나타났다. 반면 쿠팡플레이는 사용자 점유율에서는 넷플릭스에 이어 2위였지만, 디커플링 격차는 -17.9%p로 가장 크게 벌어졌다. 디즈니+(-3.4%p)와 웨이브(-0.7%p) 역시 사용시간 점유율이 사용자 규모(점유율)보다 낮았지만, 쿠팡플레이에 비하면 그 차이는 상대적으로 작았다. 특히 웨이브는 두 점유율 간 차이가 0에 가까워 이용자 규모와 사용시간 점유율이 비교적 비슷한 수준으로 나타났다. 결국 같은 OTT 시장 안에서도 넷플릭스와 티빙처럼 <span class="bodyQuotes">‘</span>이용자 규모(점유율)보다 사용시간 비중이 높은 플랫폼<span class="bodyQuotes">’</span>과 쿠팡플레이처럼 <span class="bodyQuotes">‘</span>넓은 이용자 기반에 비해 사용시간 비중이 낮은 플랫폼<span class="bodyQuotes">’</span>이 동시에 존재한다는 점을 확인할 수 있다.<br><br>
-
-              둘째, <span class="bodyQuotes">‘</span>사용시간 집중도(T)<span class="bodyQuotes">’</span><button
+            <div class="section-body">
+              <p class="paragraph">
+                최근 미국 OTT 사업자들은 케이블TV의 채널 번들을 해체했던 흐름을 거슬러, 다른 형태의 번들로 다시 묶이고 있다. 과거 케이블TV의 채널 묶음을 해체하는 <span class="bodyQuotes">‘</span>언번들링(unbundling)<span class="bodyQuotes">’</span>을 성장 동력으로 삼았던 스트리밍 사업자들이, 서비스 결합을 뜻하는 <span class="bodyQuotes">‘</span>재번들링(rebundling)<span class="bodyQuotes">’</span>을 새로운 전략으로 채택한 것이다. 최근의 재번들링은 콘텐츠를 묶어 판매하는 수준을 넘어 가입·계정·결제, 나아가 콘텐츠 탐색과 추천에 이르기까지 소비자와 플랫폼이 만나는 접점을 확보하고 관리할 것인가의 영역으로 확장되고 있다. 콘텐츠 경쟁력이 여전히 중요한 토대라면, 고객 접점의 확보와 운영은 지속적인 수익성을 좌우하는 또 하나의 핵심 변수가 된 것이다.
+                <br><br>
+                딜로이트(Deloitte)의 2026년 미국 소비자 조사(응답자 3,575명)에 따르면, 미국 가구의 90%가 유료 SVOD 서비스를 이용하며, 평균 4개 서비스를 구독하고 있다. 또한 응답 소비자의 41%는 최근 6개월 사이 SVOD를 해지한 적이 있었고, 22%는 같은 기간 해지했던 서비스에 다시 가입한 경험이 있었다.<button
                   type="button"
                   class="note-link"
-                  data-note="미디어 측정에서는 도달(reach)과 사용시간(time spent)을 분리 지표로 조사하는 것은 일반적이다. Nielsen은 디지털 콘텐츠 측정에서 reach, audience 및 time spent를 측정하며, 유럽의 미디어 조사기관인 Gemius Audience 역시 reach, audience share와 별도로 share of time을 독립 측정 지표로 정의하고 있다. 본고에서는 사용자 규모와 실제 사용시간의 차이를 비교하기 위해 (가칭)‘사용시간 집중도’를 산출한 것이며, 공인된 산업표준은 아님을 밝혀둔다.<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.nielsen.com/solutions/audience-measurement/digital-content-ratings/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Nielsen, “Digital Content Ratings”&lt;/a&gt;<br>&lt;a class=&quot;is-link&quot; href=&quot;https://audience.gemius.com/en/methodology/metrics/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Gemius Audience, “Metrics”&lt;/a&gt;"
+                  data-note="Deloitte (2026. 3. 25). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;2026 Digital Media Trends: Capturing always-on fandom between releases and seasons,&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt; 20th ed.; 2025년 10~11월 미국 소비자 3,575명 대상 조사."
+                  data-url="https://www.deloitte.com/us/en/insights/industry/technology/digital-media-trends-consumption-habits-survey.html"
+                  aria-label="1번 주석 보기">
+                  <sup>1)</sup>
+                </button> 이는 OTT가 보편적인 미디어 소비 방식으로 자리 잡았지만 가입과 해지가 빈번하게 이루어지는 시장이 되었음을 보여준다. 소비자의 선택 폭은 확대되었으나, 사업자 입장에서는 마케팅 비용을 들여 확보한 고객이 특정 콘텐츠를 시청한 뒤 쉽게 이탈할 수 있다는 부담이 커졌다. 따라서 고객 이탈(churn)을 줄이고 장기적인 이용관계를 구축하는 일이 독점 콘텐츠 확보에 버금가는 전략 과제가 된 것이다.
+                <br><br>
+                본 글은 재번들링 과정에서 콘텐츠를 보유한 기업과 최종 소비자 접점을 관리하는 기업이 반드시 일치하지 않을 수 있으며, 두 기능을 결합하거나 분리하는 방식에 따라 플랫폼 경쟁의 양상이 달라질 수 있다는 점에 주목한다. 이를 위해 디즈니·컴캐스트·버라이존 세 사업자의 번들링 모델을 비교해 보면서, 각 사업자들의 차별화 전략과 특징을 살펴볼 것이다.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 2 -->
+          <section class="section-block">
+            <div class="subtitle-wrap">
+              <div class="subtitle-bar-desktop">
+              </div>
+              <div class="subtitle-inner">
+                <div class="subtitle-bar-mobile">
+                </div>
+                <div class="subtitle-text">
+                  디즈니형: 콘텐츠 묶음을 넘어 <span class="bodyQuotes">‘</span>하나의 소비자 접점<span class="bodyQuotes">’</span>으로
+                </div>
+              </div>
+            </div>
+            <div class="section-body">
+              <p class="paragraph">
+                그동안 디즈니의 번들 전략은 Disney+/Hulu/ESPN을 저렴하게 묶어 제공하는 것으로 이해해 왔다. Disney+는 픽사 애니메이션과 마블·스타워즈 같은 대형 프랜차이즈 콘텐츠를, Hulu는 드라마·예능 등 일반 오락을, ESPN은 스포츠를 담당해 온 것은 출발점일 뿐이다. 최근 디즈니는 Disney+를 중심으로 소비자가 콘텐츠를 찾고 시청하며 브랜드와 관계를 맺는 과정을 연결하는 <span class="bodyQuotes">‘</span>디지털 관문(gateway)<span class="bodyQuotes">’</span>으로 구축하고 있다. 2024년 12월 Disney+에 ESPN+ 콘텐츠를 위한 허브를 선보인 데 이어, 2026년 1월에는 앱의 탐색 화면과 개인화 추천 기능을 개선하였다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://thewaltdisneycompany.com/news/espn-on-disney-plus/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Walt Disney Company (2024. 12. 4). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Game On: ESPN on Disney+ Launches Today&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.disneyplus.com/explore/articles/disney-plus-app-redesign-new-features&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Disney+ (2026. 1. 9). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;The Disney+ App Just Got an Update, Here’s What You Need to Know&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;"
+                  aria-label="2번 주석 보기">
+                  <sup>2)</sup>
+                </button>
+                <br><br>
+                2026년 5월 도입된 Hulu 프로필 연동은 이러한 방향을 보다 섬세하게 보여준다. Hulu 가입자는 <span class="bodyQuotes">‘</span>MyDisney<span class="bodyQuotes">’</span> 계정으로 Disney+에 접속해 프로필을 연결하고, Hulu의 시청이력과 찜 목록을 Disney+의 <span class="bodyQuotes">‘</span>이어보기(Continue Watching)<span class="bodyQuotes">’</span>, <span class="bodyQuotes">‘</span>시청목록(Watchlist)<span class="bodyQuotes">’</span>, <span class="bodyQuotes">‘</span>추천(For You)<span class="bodyQuotes">’</span> 등에 반영할 수 있다. 물론 모든 Hulu 가입자에게 예외 없이 적용되는 기능은 아니며, 연령 및 구독 유형과 출시 일정 등에 따른 제한이 있다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://thewaltdisneycompany.com/news/hulu-disney-plus-profile-linking/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Walt Disney Company (2026. 5. 19). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Hulu on Disney+ Just Got Better: What You Need to Know About Linking Your Profiles&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://help.hulu.com/article/hulu-link-hulu-profile&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Hulu Help Center (2026. 5. 19). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;How to link your Hulu profile to Disney+&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;"
+                  aria-label="3번 주석 보기">
+                  <sup>3)</sup>
+                </button> 이용자로서는 앱을 오가며 보던 콘텐츠를 다시 찾는 번거로움을 줄일 수 있고, 디즈니로서는 계정·프로필·시청기록·추천 기능 등 중요 데이터를 한곳에 모을 수 있다.
+                <br><br>
+                라이브 스포츠 역시 이러한 게이트웨이 전략에서 유용한 콘텐츠이다. 디즈니는 Disney+에 일부 ESPN 스포츠 콘텐츠를 노출하며 상위 번들 상품으로의 전환을 유도하면서, 일상적인 스포츠 시청의 주된 목적지는 ESPN으로 유지한다는 방침을 밝혔다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://thewaltdisneycompany.com/news/disney-q3-earnings-2026/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Walt Disney Company (2026. 8. 5). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Disney Q3 FY26 Earnings: Commentary from CEO Josh D’Amaro&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://s206.q4cdn.com/979796730/files/doc_events/2026/Aug/05/q3-fy26-earnings-transcript.pdf&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Walt Disney Company (2026. 8. 5). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Q3 FY26 Earnings Conference Call Transcript&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;, pp. 5–6.&lt;/a&gt;"
+                  aria-label="4번 주석 보기">
+                  <sup>4)</sup>
+                </button>
+                <br><br>
+                이처럼 이용 경험의 통합이 진행되는 가운데 디즈니 스트리밍 사업의 수익성 지표도 개선되었다. Disney+와 Hulu의 구독형 스트리밍 사업을 포함하는 <span class="bodyQuotes">‘</span>Entertainment SVOD<span class="bodyQuotes">’</span> 영업이익은 2026 회계연도 1분기 4억 5,000만 달러, 2분기 5억 8,200만 달러, 3분기 7억 1,200만 달러로 증가하였다. 같은 기간 영업이익률은 8.4%, 10.6%, 12.9%로 높아졌으며, 3분기 매출은 55억 3,200만 달러로 전년 대비 11% 증가했다. 다만 이 수치는 디즈니가 자체 기준으로 산출한 엔터테인먼트 부문 구독형 스트리밍(SVOD) 영업이익(비GAAP 지표)이며, ESPN 사업 전체를 포함하지 않는다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://www.sec.gov/Archives/edgar/data/1744489/000174448926000018/fy2026_q1xprxex991.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Walt Disney Company (2026. 2. 2). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;First Quarter Earnings for Fiscal 2026&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;, SEC Exhibit 99.1.&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.sec.gov/Archives/edgar/data/1744489/000174448926000036/fy2026_q2xprxex991.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Walt Disney Company (2026. 5. 6). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Second Quarter Earnings for Fiscal 2026&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;, SEC Exhibit 99.1.&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;The Walt Disney Company (2026. 8. 5). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Third Quarter Earnings for Fiscal 2026&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;, SEC Exhibit 99.1.&lt;/a&gt;"
                   aria-label="5번 주석 보기">
                   <sup>5)</sup>
-                </button>는 사용시간 점유율을 사용자 점유율로 나눈 상대적 비율이다. 1은 두 점유율이 같은 산술적 기준점이며, 1을 초과하면 이용자 규모에 비해 상대적으로 더 많은 사용시간을 확보하고 있음을, 1보다 작으면 상대적으로 적은 사용시간을 확보하고 있음을 뜻한다.<button
-                type="button"
-                class="note-link"
-                data-note="1이 기준점이 되는 이유를 수학적으로 설명하면, 플랫폼 i의 사용자 수를 Ui, 사용시간을 Ti라고 할 때, “사용시간 집중도 = 사용시간 점유율 ÷ 사용자 점유율”을 풀어쓰면 다음과 같다.<br>&lt;img src=&quot;./img/manuscript10/note6.png&quot; alt=&quot;사용시간 집중도 설명&quot; style=&quot;display:block;width:100%;max-width:560px;height:auto;margin-top:12px;&quot;&gt;<br>1 : 사용자 점유율과 사용시간 점유율이 동일 → 이용자 규모에 비례하는 만큼의 시간을 확보<br>1 초과: 사용시간 점유율이 사용자 점유율보다 큼 → 이용자 규모에 비해 상대적으로 많은 시간을 확보<br>1 미만: 사용시간 점유율이 사용자 점유율보다 작음 → 이용자 규모에 비해 상대적으로 적은 사용시간을 확보"
-                aria-label="6번 주석 보기">
-                <sup>6)</sup>
-              </button> 즉 티빙의 사용시간 집중도 1.39는 사용자 점유율 기준으로 볼 때 사용시간 비중이 약 39% 더 큰 수준이라는 의미이다.
-            </p>
+                </button> 매출보다 영업이익이 빠르게 확대된 것은, 구독자가 늘어도 콘텐츠 제작비나 플랫폼 운영비 등 비용은 그만큼 늘지 않아 수익성이 개선되는 이른바 영업 레버리지(operating leverage) 효과가 나타나고 있음을 시사한다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="Disney FY26 분기별 실적 발표 및 SEC 공시: Q1 (2026. 2. 2., 원문); Q2 (2026. 5. 6., SEC Ex. 99.1); Q3 (2026. 8. 5., SEC Ex. 99.1). Entertainment SVOD 영업이익·이익률은 비GAAP 지표로, Disney+·Hulu SVOD는 포함하되 Hulu Live TV·Fubo는 제외함."
+                  aria-label="6번 주석 보기">
+                  <sup>6)</sup>
+                </button>
+              </p>
 
-            <div class="image-wrap">
-              <img src="./img/manuscript10/img2.png" alt="표 1" class="section-image" />
-              <div class="image-caption">
-                <p>
-                  <span class="text-brand"><표 1></span>
-                  2026년 5월 국내 OTT의 디커플링 격차와 사용시간 집중도
-                </p>
-
-                <div>
-                  <span style="display:inline-block; vertical-align:top;">* 출처:</span>
-                  <span style="display:inline-block; width:calc(100% - 60px);">
-                    와이즈앱·리테일(2026. 6. 23.). 앞의 자료를 바탕으로 연구자 구성
-                  </span>
-                </div>
-
-                <div>
-                  <span style="display:inline-block; vertical-align:top;">* 주:</span>
-                  <span style="display:inline-block; width:calc(100% - 60px);">
-                    디커플링 격차 D = 사용시간 점유율 − 사용자 점유율<br>
-                    사용시간 집중도 T = 사용시간 점유율 ÷ 사용자 점유율<br>
-                    기타 4사(라프텔, U+모바일tv, 왓챠, 스포티비 나우)의 사용시간 점유율은
-                    상위 5사 합계의 잔여 값으로 추정함
-                  </span>
+              <div class="image-wrap">
+                <img alt="Disney Entertainment SVOD 2026 회계연도 1~3분기 영업이익과 영업이익률" class="section-image" src="./img/manuscript10/img1.png"/>
+                <div class="image-caption">
+                  <p>
+                    <span class="text-brand">
+                      [그림 1]
+                    </span>
+                    Disney Entertainment SVOD: 2026 회계연도 1~3분기 영업이익과 영업이익률
+                  </p>
+                  <p>
+                    (출처: The Walt Disney Company (2026. 2. 2.; 5. 6.; 8. 5.), 2026 회계연도 1~3분기 SEC 실적 공시(위 Disney 실적 각주), 저자 재구성)
+                  </p>
                 </div>
               </div>
+
+              <p class="paragraph">
+                요약하면 디즈니형 번들은 세 가지 서비스들의 <span class="bodyQuotes">‘</span>묶음<span class="bodyQuotes">’</span>보다 소비자 접점에서 쌓이는 <span class="bodyQuotes">‘</span>관계<span class="bodyQuotes">’</span>에 있다고 볼 수 있다. 앱과 계정이 이어지고 시청이력·추천·광고 운영이 점차 하나로 연결될수록, 디즈니는 인기 작품에 대한 반복 방문과 추가 구매, 장기적인 팬 관계로 구축할 가능성이 커진다. 따라서 디즈니의 번들 전략은 신규 가입자 수가 아니라 번들 가입자의 유지율, ESPN 교차판매, 앱 이용 빈도, 광고 수익화, 고객생애가치(LTV)를 확장해가는 데 있다고 볼 수 있다.
+              </p>
             </div>
+          </section>
 
-            <p class="paragraph">
-              하단의 [그림 2]에서 <span class="bodyQuotes">‘</span>사용시간 집중도(T)<span class="bodyQuotes">’</span>를 보면, 넷플릭스(1.53)와 티빙(1.39)은 이용자 비중에 비해 사용시간 비중이 상대적으로 높게 나타난 반면, 쿠팡플레이(0.27)는 넓은 도달에 비해 사용시간 비중이 낮은 편이다. 물론 이 결과만으로 플랫폼의 우열을 단정할 수는 없다. 쿠팡플레이는 쿠팡 와우 멤버십과 결합된 서비스라는 점에서 OTT 자체의 서비스 외에도 다른 이용자 확보 구조를 갖고 있다. 또한 프리미어리그·NBA와 같은 시즌형 스포츠 중계와 <span class="bodyQuotes">‘</span>쿠팡플레이 시리즈<span class="bodyQuotes">’</span> 같은 대형 이벤트를 통해 이용자 유입을 확대하는 전략적 강점이 있다.<button
-                type="button"
-                class="note-link"
-                data-note="쿠팡 (2025. 6. 19). 쿠팡플레이, 올 8월 &lt;span class=&quot;bodyQuotes&quot;&gt;‘&lt;/span&gt;스포츠 패스&lt;span class=&quot;bodyQuotes&quot;&gt;’&lt;/span&gt; 일반 회원 요금제 출시"
-                data-url="https://news.coupang.com/archives/54044/"
-                aria-label="7번 주석 보기">
-                <sup>7)</sup>
-              </button> 반대로 티빙은 국내 드라마·예능과 KBO처럼 반복 소비되는 콘텐츠를 중심으로 재방문과 장시간 이용을 유도하는 포트폴리오를 구축해 왔다. 핵심은 어느 모델이 더 우월하다는 것이 아니라, <span class="bodyQuotes">‘</span>유입을 만드는 힘<span class="bodyQuotes">’</span>과 <span class="bodyQuotes">‘</span>시간을 붙잡는 힘<span class="bodyQuotes">’</span>을 구분해서 해석해야 한다는 점이다.
-            </p>
-
-            <div class="image-wrap">
-              <img src="./img/manuscript10/img3.jpg" alt="그림 2" class="section-image" />
-              <div class="image-caption">
-                <p><span class="text-brand">[그림 2]</span> 도달(reach)과 집중(attention)의 디커플링 지도</p>
-                <p>* 출처: 위의 &lt;표 1&gt;의 사용시간 집중도(T)의 값을 기준으로 연구자가 구성</p>
+          <!-- Section 3 -->
+          <section class="section-block">
+            <div class="subtitle-wrap">
+              <div class="subtitle-bar-desktop">
+              </div>
+              <div class="subtitle-inner">
+                <div class="subtitle-bar-mobile">
+                </div>
+                <div class="subtitle-text">
+                  컴캐스트형: 경쟁하는 OTT를 한 창구에서 파는 유통 플랫폼
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+            <div class="section-body">
+              <p class="paragraph">
+                디즈니가 자사 서비스를 하나로 엮는다면, 컴캐스트는 서로 경쟁하는 사업자들의 OTT를 한곳에 모아 제공한다. Peacock·Netflix·Apple TV·Disney+·Hulu·HBO Max 등 가입자를 놓고 경쟁하는 서비스들이 제3자인 컴캐스트의 판매창구에 함께 진열되는 구조다. 이 모델의 핵심은 <span class="bodyQuotes">‘</span>누가 더 좋은 콘텐츠를 보유했는가<span class="bodyQuotes">’</span>보다 <span class="bodyQuotes">‘</span>소비자가 어디에서 서비스를 선택하고 결제하는가<span class="bodyQuotes">’</span>에 있다.
+                <br><br>
+                그 출발점은 컴캐스트가 2024년 출시한 엑스피니티 스트림세이버(Xfinity StreamSaver)다. 당시 넷플릭스 광고형, 피콕 프리미엄(Peacock Premium), Apple TV+를 결합해 월 15달러에 제공하였다. 이후 스트림세이버의 월 요금은 2025년 12월 22일부터 18달러로 인상되었다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://corporate.comcast.com/press/releases/comcast-introduces-peacock-netflix-and-apple-tv-streaming-bundle&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Comcast (2024. 5. 21). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Comcast Introduces Peacock, Netflix and Apple TV+ Streaming Bundle&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.xfinity.com/billchanges&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Xfinity. &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Bill Changes&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt; (2026. 11. 3. 확인)&lt;/a&gt;"
+                  aria-label="7번 주석 보기">
+                  <sup>7)</sup>
+                </button>
+                이어 2025년 7월에는 스트림스토어(StreamStore)를 출시하여 번들과 개별 앱·채널을 한곳에서 살펴보고 구매하며, 요금까지 관리할 수 있는 유통 장터(marketplace)로 발전시켰다. 컴캐스트는 스트림스토어에서 450개가 넘는 앱·채널을 제공하며 약 20만 편의 영화·TV 타이틀을 임대하거나 구매할 수 있다고 설명한다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="Comcast (2025. 7. 23). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Comcast’s Xfinity Unveils StreamStore: A Smarter, Simpler Way to Discover, Manage and Enjoy Entertainment.&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt; 20만 편 수치는 가입 시 모두 무료로 제공되는 콘텐츠 수가 아니라 임대·구매 가능한 타이틀의 규모임."
+                  data-url="https://corporate.comcast.com/press/releases/xfinity-streamstore-smarter-simpler-way-discover-manage-enjoy-entertainment"
+                  aria-label="8번 주석 보기">
+                  <sup>8)</sup>
+                </button>
+                <br><br>
+                이러한 모델에서 컴캐스트의 경쟁력은 콘텐츠 자체보다 콘텐츠와 소비자를 연결하는 플랫폼에 있다. 주요 OTT 사업자들이 각자의 콘텐츠와 IP를 보유하는 반면, 컴캐스트는 고객과의 지속적인 거래관계, 요금 청구·결제 시스템, 그리고 이를 뒷받침하는 브로드밴드 가입자 기반을 활용한다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="Comcast (2026. 10. 22). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Comcast Reports 3rd Quarter 2026 Results,&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt; Connectivity &amp; Platforms 및 고객 지표 관련 공시."
+                  data-url="https://www.cmcsa.com/news-releases/news-release-details/comcast-reports-3rd-quarter-2026-results"
+                  aria-label="9번 주석 보기">
+                  <sup>9)</sup>
+                </button> 소비자는 여러 OTT 서비스를 개별적으로 가입·관리해야 하는 번거로움을 줄일 수 있고, 컴캐스트는 다양한 OTT를 구성·판매하는 플랫폼 사업자로서의 입지를 강화할 수 있다.
+                <br><br>
+                컴캐스트의 번들 전략을 평가할 때, 자체 OTT인 피콕의 실적도 함께 볼 필요가 있다. 피콕의 조정 상각 전 영업이익(EBITDA)는 2026년 1분기 4억 3,200만 달러 적자에서 2분기 1억 8,900만 달러, 3분기 2억 6,100만 달러 흑자로 전환되었다. 유료가입자는 1분기 말 4,600만 명에서 2·3분기 말 4,800만 명으로 증가하였다. 반면 매출은 1분기 약 21억 달러, 2분기 약 19억 달러, 3분기 약 18억 달러로 분기별 감소세를 보였다. 이는 가입자 증가만으로 수익성 개선을 설명하기 어렵다는 점을 보여준다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://www.cmcsa.com/node/45486&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Comcast (2026. 4. 23). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Comcast Reports 1st Quarter 2026 Results&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.cmcsa.com/node/45906&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Comcast (2026. 7. 23). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Comcast Reports 2nd Quarter 2026 Results&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.cmcsa.com/news-releases/news-release-details/comcast-reports-3rd-quarter-2026-results&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Comcast (2026. 10. 22). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Comcast Reports 3rd Quarter 2026 Results&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;. 조정 EBITDA는 비GAAP 지표.&lt;/a&gt;"
+                  aria-label="10번 주석 보기">
+                  <sup>10)</sup>
+                </button>
+                <br><br>
+                실제로 피콕의 분기별 실적에는 동계올림픽과 슈퍼볼(1분기), FIFA 월드컵(2·3분기) 등 대형 스포츠 이벤트의 영향이 반영되어 있다. 특히 컴캐스트는 3분기 피콕의 매출과 조정 EBITDA에 FIFA 월드컵 관련 매출과 비용이 포함되어 있음을 명시하였다. 같은 기간 월드컵에 따른 추가 매출은 컴캐스트의 미디어 부문 전체에서 약 2억 2,400만 달러에 달했으나, 이는 피콕 단독 실적과는 구분되는 수치이며 관련 프로그램 제작·중계 비용도 함께 반영되었다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="Comcast, 2026 Q1 (2026. 4) / Q2 (2026. 7. 23) / Q3 (2026. 10. 22) earnings releases. Q1 Peacock revenue $2.1bn, adjusted EBITDA −$432m; Q2 $1.9bn/+189m; Q3 $1.8bn/+261m."
+                  data-url="https://www.cmcsa.com/news-releases/news-release-details/comcast-reports-3rd-quarter-2026-results"
+                  aria-label="11번 주석 보기">
+                  <sup>11)</sup>
+                </button> 따라서 피콕의 흑자 전환은 가입자 증가뿐 아니라 스포츠 이벤트에 따른 매출·비용 변동 등 여러 요인이 복합적으로 작용한 결과로 이해할 필요가 있다. 이를 컴캐스트의 OTT 번들 전략에 따른 직접적인 성과로 단정하는 데에는 신중할 필요가 있다.
+              </p>
 
-        <!-- Section 3 -->
-        <section class="section-block">
-          <div class="subtitle-wrap">
-            <div class="subtitle-bar-desktop"></div>
+              <div class="image-wrap">
+                <img alt="피콕의 2026년 분기별 수익성 및 유료가입자 추이" class="section-image" src="./img/manuscript10/img2.png"/>
+                <div class="image-caption">
+                  <p>
+                    <span class="text-brand">
+                      [그림 2]
+                    </span>
+                    피콕의 2026년 분기별 수익성 및 유료가입자 추이<button
+                    type="button"
+                    class="note-link"
+                    data-note="Comcast (2026. 4. 23.; 7. 23.; 10. 22.). 2026년 1~3분기 실적 공시(위 Peacock 실적 각주), 유료가입자는 분기 말 기준, 매출과 조정 EBITDA는 회사 공시의 근사치·비GAAP 지표를 따름."
+                    aria-label="12번 주석 보기">
+                    <sup>12)</sup>
+                  </button>
+                  </p>
+                  <p>
+                    (출처: Comcast Corporation, 2026년 1, 2, 3분기 실적발표. 저자 재구성)
+                  </p>
+                </div>
+              </div>
 
-            <div class="subtitle-inner">
-              <div class="subtitle-bar-mobile"></div>
-              <div class="subtitle-text">티빙의 흑자 전환: ‘이용자 시간’ 확보 경쟁의 서막</div>
+              <p class="paragraph">
+                이러한 흐름은 컴캐스트 사업모델의 이중적인 성격을 보여준다. 컴캐스트는 피콕을 통해 콘텐츠 제작비와 스포츠 중계권 비용을 부담하면서, 동시에 넷플릭스와 같은 경쟁 OTT 사업자의 서비스를 소비자에게 제공하는 유통 플랫폼 역할도 수행한다. 요컨대, 컴캐스트형 모델은 콘텐츠를 소유하지 않고도 OTT 시장에서 영향력을 키울 수 있다는 것을 보여준 사례로, 경쟁하는 서비스들을 한 진열대에 올리고, 제휴 서비스의 가입과 결제, 구독 관리 기능을 자사의 브로드밴드 고객 접점에 결합하는 방식이다. 따라서 이 모델의 성패는 얼마나 많은 OTT를 묶느냐보다, 제휴 OTT와의 정산·노출 조건을 얼마나 유리하게 설계하느냐에 달려 있다. 콘텐츠 사업자가 <span class="bodyQuotes">‘</span>무엇을 볼 것인가<span class="bodyQuotes">’</span>를 결정한다면, 컴캐스트형 모델은 <span class="bodyQuotes">‘</span>어디에서, 어떻게 보고 결제할 것인가<span class="bodyQuotes">’</span>를 선점하는 전략이라 할 수 있다.
+              </p>
             </div>
-          </div>
+          </section>
 
-          <div class="section-body">
-            <p class="paragraph">
-              OTT 시장에서 사용시간이 중요한 이유는 <span class="bodyQuotes">‘</span>시간의 확보<span class="bodyQuotes">’</span>가 <span class="bodyQuotes">‘</span>수익<span class="bodyQuotes">’</span>으로 연결되기 때문이다. 최근 티빙의 수익 개선은 이런 맥락에서 주목할 만하다. 티빙은 2022년 매출 2,476억 원, 영업손실 약 1,192억 원을 기록했고, 2023년에는 매출 3,264억 원으로 성장했지만, 영업손실도 약 1,420억 원으로 확대됐다. 그러나 2024년 매출은 4,353억 원으로 늘었고, 영업손실은 약 710억 원으로 절반 수준까지 축소됐다.<button
-                type="button"
-                class="note-link"
-                data-note="CJ ENM (2025. 2. 12). CJ ENM 2024년 매출 5조 2,314억원 영업이익 1,045억원 달성, 사업 경쟁력 강화로 흑자 전환 성공, CJ 뉴스룸"
-                data-url="https://cjnews.cj.net/category/press-center/보도자료/page/19/?aff=9"
-                aria-label="8번 주석 보기">
-                <sup>8)</sup>
-              </button>
-            </p>
-
-            <div class="image-wrap">
-              <img src="./img/manuscript10/img4.jpg" alt="그림 3" class="section-image" />
-              <div class="image-caption">
-                <p><span class="text-brand">[그림 3]</span> 티빙 분기별 매출액·영업손익 추이</p>
-                <p>* 출처: 지인해(2026.8.26). CJ ENM 티빙 사업부 실적. 신한투자증권 제공자료</p>
+          <!-- Section 4 -->
+          <section class="section-block">
+            <div class="subtitle-wrap">
+              <div class="subtitle-bar-desktop">
+              </div>
+              <div class="subtitle-inner">
+                <div class="subtitle-bar-mobile">
+                </div>
+                <div class="subtitle-text">
+                  버라이존형: 통신요금제의 <span class="bodyQuotes">‘</span>결합 혜택(perk)<span class="bodyQuotes">’</span>이 된 OTT
+                </div>
               </div>
             </div>
+            <div class="section-body">
+              <p class="paragraph">
+                버라이존(Verizon)은 OTT를 휴대전화·인터넷 요금제에 덧붙이는 결합 혜택, 이른바 <span class="bodyQuotes">‘</span>퍼크(perk)<span class="bodyQuotes">’</span>로 판매한다. 이용자는 자격 요건을 충족하는 통신요금제에 가입한 뒤 Netflix·HBO Max나 Disney+·Hulu·ESPN+ 등 결합상품을 추가 혜택으로 선택할 수 있으며, 해당 구독료를 통신요금과 함께 결제한다. 버라이존에게 OTT는 독립적인 수익상품이면서도 통신 가입을 유도하고 기존 고객과의 관계를 강화하는 수단이라고 볼 수 있다.
+                <br><br>
+                2026년 11월 공개 자료에 따르면, Disney+·Hulu·ESPN+ 광고형 결합 상품은 월 12달러, Netflix·HBO Max 광고형 결합 상품은 월 13달러이다. 버라이존이 제시한 비교가격은 각각 월 21.99달러와 19.98달러로, 표시가격상 절감액은 9.99달러와 6.98달러다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://www.verizon.com/digital/nsa/nos/ui/products/producthub/newpdp/disneyhuluespnbundle_perk&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Verizon (2026. 11월 기준). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Disney+, Hulu, &amp; ESPN+&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.verizon.com/nextgendigital/nos/products-perks/pdp/netflix-hbo-max-bundle&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Verizon (2026. 11월 기준). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Netflix &amp; HBO Max (With Ads)&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>요금과 비교가격은 자격요건 및 프로모션 등에 따라 변동될 수 있음."
+                  aria-label="13번 주석 보기">
+                  <sup>13)</sup>
+                </button> 가격 할인이 소비자를 끌어들이는 직접적인 유인이라면, 이러한 상품들의 가치는 OTT 요금을 통신요금과 한번에 내고 필요에 따라 결합 혜택을 손쉽게 바꿀 수 있다는 편의성에 있다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://www.verizon.com/products-perks/perks/disney-hulu-espn-bundle/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Verizon (2026. 11월 기준). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Disney+, Hulu, &amp; ESPN+&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt; ($12 vs $21.99)&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.verizon.com/digital/nsa/nos/ui/products/producthub/newpdp/netflixhbomax_perk&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;&lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Netflix &amp; HBO Max (With Ads)&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt; ($13 vs $19.98)&lt;/a&gt;"
+                  aria-label="14번 주석 보기">
+                  <sup>14)</sup>
+                </button>
+              </p>
 
-            <p class="paragraph">
-              분기별 흐름을 보면 변화는 더욱 뚜렷하다. 2025년 2분기 티빙 매출은 995억 원, 영업손실은 약 240억 원이었다. 2026년 1분기에도 192억 원의 영업손실을 기록했지만, 전년보다 손실 폭은 축소됐다.<button
-                type="button"
-                class="note-link"
-                data-note="아주경제 (2026. 5. 7). [컨콜] 티빙, 1분기 영업손실 192억원…전년 比 65억원↓"
-                data-url="https://www.ajunews.com/view/20260507153358953"
-                aria-label="9번 주석 보기">
-                <sup>9)</sup>
-              </button> 이어 2026년 2분기 매출은 1,407억 원으로 전년 대비 41.4% 증가했고, 영업이익은 약 60억 원으로 돌아섰다. 티빙 출범 이후 첫 분기 흑자이다.<button
-                type="button"
-                class="note-link"
-                data-note="CJ ENM (2026. 8. 6). “2분기 매출 1조 2,033억원, 영업이익 334억원…IP 경쟁력 및 플랫폼 외형 확장 통해 수익성 개선.”; CJ ENM (2026. 8. 6). 2026년 2분기 실적발표 컨퍼런스콜"
-                data-url="https://cjnews.cj.net/?p=78690"
-                aria-label="10번 주석 보기">
-                <sup>10)</sup>
-              </button><br><br>
+              <div class="image-wrap">
+                <img alt="주요 OTT 번들의 공개 월 요금 비교" class="section-image" src="./img/manuscript10/img3.png"/>
+                <div class="image-caption">
+                  <p>
+                    <span class="text-brand">
+                      [그림 3]
+                    </span>
+                    주요 OTT 번들의 공개 월 요금: 개별 구독과 번들·퍼크 요금 비교
+                  </p>
+                  <p>
+                    (출처: Xfinity, <span class="bodyQuotes">“</span>Bill Changes,<span class="bodyQuotes">”</span>, Verizon 공식 퍼크 판매 페이지(2026년 11월 기준)<button
+                      type="button"
+                      class="note-link"
+                      data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://www.xfinity.com/billchanges&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;참고 사이트 1&lt;/a&gt;<br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.peacocktv.com/plans/all-monthly&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;참고 사이트 2&lt;/a&gt;<br>&lt;a class=&quot;is-link&quot; href=&quot;https://help.netflix.com/en/node/24926?country=US&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Netflix. &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Plans and Pricing&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.apple.com/apple-tv/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Apple. &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Apple TV&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>필자 산출. Xfinity 비교가격은 Peacock Premium 10.99달러 + Netflix 광고형 8.99달러 + Apple TV 14.99달러 = 34.97달러. 이 수치는 원고의 종전 비교가격 31.97달러를 2026년 11월 3일 확인 가능한 공개가격으로 표시한 것임. 세금·제휴 자격·프로모션 조건에 따라 실제 부담이 달라질 수 있음."
+                      aria-label="15번 주석 보기">
+                      <sup>15)</sup>
+                    </button>)
+                  </p>
+                </div>
+              </div>
 
-              이 변화는 <span class="bodyQuotes">‘</span>이용자 시간<span class="bodyQuotes">’</span>이라는 관점에서 흥미롭다. CJ ENM은 2분기 수익성 개선 배경으로 KBO 시즌과 오리지널 콘텐츠 흥행에 따른 순가입자·MAU 증가, 구독·광고 매출의 성장, 해외 브랜드관 매출 확대 등을 제시했다. 이용자를 한 번 유입시키는 데 그치지 않고 반복 시청과 체류를 만들어낸 뒤, 그 시간을 구독·광고·해외유통 등 매출로 연결하는 구조가 중요해지고 있음을 보여주었다. 티빙의 광고 매출 또한 2026년 1분기 전년 대비 35.3% 증가했고, 2분기에도 52% 성장했다.<button
-                type="button"
-                class="note-link"
-                data-note="CJ ENM (2026. 8. 7). IP·플랫폼 모두 잡은 CJ ENM, 글로벌 공략 속도낸다"
-                data-url="https://cjnews.cj.net/?p=78724&amp;ut"
-                aria-label="11번 주석 보기">
-                <sup>11)</sup>
-              </button> 앞서 살펴본 티빙의 사용시간 집중도와 흑자 전환을 광고매출 증가와 단순 인과관계로 연결할 수는 없지만, 이용자 시간을 확보하는 능력이 구독뿐 아니라 광고 수익화의 중요한 기반이 되고 있는 것은 분명하다.
-            </p>
+              <p class="paragraph">
+                다만 요금을 한 번에 낸다고 해서 시청 서비스까지 하나로 합쳐지는 것은 아니다. 버라이존의 공식 안내에 따르면 넷플릭스와 HBO Max는 각각 별도의 계정 설정이 필요하며 콘텐츠도 개별 서비스에서 이용해야 한다. Disney+·Hulu·ESPN+ 결합 상품 역시 서비스별 접근 방식이 유지된다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://www.verizon.com/nextgendigital/nos/products-perks/pdp/netflix-hbo-max-bundle&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Verizon (2026. 11월 기준). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Netflix &amp; HBO Max (With Ads)&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br>&lt;a class=&quot;is-link&quot; href=&quot;https://www.verizon.com/digital/nsa/nos/ui/products/producthub/newpdp/disneyhuluespnbundle_perk&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Verizon (2026. 11월 기준). &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Disney+, Hulu, &amp; ESPN+&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt;&lt;/a&gt;<br><br>각 판매 페이지의 &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;Important Information&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt; 참조(위 버라이존 가격 각주 URL과 동일)."
+                  aria-label="16번 주석 보기">
+                  <sup>16)</sup>
+                </button> 따라서 버라이존의 역할은 각 OTT의 시청 경험을 일원화하는 것이 아니라 구독과 청구를 통합적으로 관리하는 데 있다. 시청이력이나 추천 알고리즘까지 통합하는 모델과는 구분할 필요가 있다.<br><br>
+                버라이존형 번들의 함의는 OTT 경쟁의 질문이 바뀌고 있다는 점이다. 소비자가 통신요금제 내에서 Netflix·HBO Max 묶음과 Disney+·Hulu·ESPN+ 묶음을 선택할 때, 그 선택·결제·변경이 이루어지는 접점에는 OTT 사업자가 아니라 통신사가 위치한다. 물론 시청 경험과 데이터는 여전히 각 OTT에 남아 있지만, 구독 관리의 주도권이 통신사 쪽으로 기울수록 OTT 사업자들은 정산 조건과 할인 부담, 고객 접점에서의 브랜드 노출 등을 놓고 통신사와 새로운 협상을 해야 한다.
+                <br><br>
+                지금까지 살펴본 세 가지 모델을 보면 그 차이가 뚜렷하다. 디즈니는 이용자의 취향과 시청 경험을 자사 IP·서비스와 연결하고, 컴캐스트는 경쟁 OTT를 한곳에서 찾고 비교·구매하도록 하는 유통 관문을 제공한다. 버라이존은 월정액 통신계약을 매개로 OTT 구독과 결제를 결합한다. 모두 <span class="bodyQuotes">‘</span>통합<span class="bodyQuotes">’</span>을 추구하지만 실제로 확보하려는 고객 접점과 가치사슬의 단계는 서로 다르다.
+              </p>
+
+              <div class="image-wrap">
+                <img alt="2026년 미국 OTT 재번들링의 세 모델 비교" class="section-image" src="./img/manuscript10/img4.png"/>
+                <div class="image-caption">
+                  <p>
+                    <span class="text-brand">
+                      [그림 4]
+                    </span>
+                    2026년 미국 OTT 재번들링의 세 모델 비교
+                  </p>
+                  <p>
+                    (출처: The Walt Disney Company (2026. 5. 19.; 8. 5). 프로필 연동 안내 및 2026년 3분기 컨퍼런스콜; Comcast (2025. 7. 23). StreamStore 출시자료; Verizon (2026. 11월 기준), 공식 결합 상품(perk) 판매 페이지를 바탕으로 저자 재구성. 그림의 <span class="bodyQuotes">‘</span>수익 모델<span class="bodyQuotes">’</span>은 개별 기업이 공시한 단일 KPI가 아닌 분석적 개념임)
+                  </p>
+                </div>
+              </div>
+
+              <p class="paragraph">
+                [그림 4]와 같이 OTT 재번들링은 ①가격·상품의 결합, ②가입·청구의 통합, ③앱·검색·추천 등 이용 경험의 연결, ④광고·데이터·수익화 기술의 통합으로 구분할 수 있다. 디즈니는 자사 서비스를 중심으로 ③과 ④의 영역까지 확장하고 있으나, 컴캐스트와 버라이존이 제휴 OTT에 행사할 수 있는 권한은 개별 계약과 서비스 구조에 따라 달라진다. 결국 서두에서 제기한 <span class="bodyQuotes">‘</span>콘텐츠보다 플랫폼인가<span class="bodyQuotes">’</span>라는 질문은 어느 한쪽의 우위를 가리는 문제로만 볼 수 없다. 콘텐츠가 여전히 소비자를 끌어들이는 핵심 동력이라면, 이들을 장기적으로 유지하고 지속적인 수익으로 연결하는 경쟁력은 플랫폼이 고객 경험과 관계를 어떻게 설계하고 관리하느냐에 달려 있다.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 5 -->
+          <section class="section-block">
+            <div class="subtitle-wrap">
+              <div class="subtitle-bar-desktop">
+              </div>
+              <div class="subtitle-inner">
+                <div class="subtitle-bar-mobile">
+                </div>
+                <div class="subtitle-text">
+                  나가며: 국내 OTT 시장의 번들 전략에 주는 시사점
+                </div>
+              </div>
+            </div>
+            <div class="section-body">
+              <p class="paragraph">
+                미국의 재번들링 모델이 국내 시장에 던지는 메시지는 분명하다. 넷플릭스 등 글로벌 사업자와 경쟁해야 하는 국내 사업자들은 할인에 의존한 가입자 확대뿐만 아니라 이용자가 콘텐츠를 쉽게 발견하고 서비스를 지속적으로 이용하도록 하는 역량을 갖춰야 한다. 즉 이용 경험을 연결하고 데이터·광고 수익화를 고도화하는 단계로 나아가는 것이 중요하다. 이를 위해 가입자 수와 결합상품 판매량뿐만 아니라 고객 유지율, 실제 이용 빈도, 가입자당 수익과 제휴 비용을 함께 고려해서 실질적인 수익으로 이어져야 한다.
+                <br><br>
+                최근 국내 OTT 시장에서도 번들링 전략에 변화가 시작되었다. 티빙과 웨이브는 2025년 6월 하나의 구독으로 두 서비스를 이용하는 <span class="bodyQuotes">‘</span>더블 이용권<span class="bodyQuotes">’</span>을 출시했고,<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://cjnews.cj.net/하나의-구독-두-배의-즐거움-티빙-웨이브와-더/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;CJ ENM (2025. 6. 16). 하나의 구독, 두 배의 즐거움: 티빙, 웨이브와 &lt;span class=&quot;bodyQuotes&quot;&gt;‘&lt;/span&gt;더블 이용권&lt;span class=&quot;bodyQuotes&quot;&gt;’&lt;/span&gt; 출시, CJ 뉴스룸&lt;/a&gt;<br><br>&lt;a class=&quot;is-link&quot; href=&quot;https://mkt.tving.com/2025twdouble/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;TVING, &lt;span class=&quot;bodyQuotes&quot;&gt;“&lt;/span&gt;티빙×웨이브 더블 이용권&lt;span class=&quot;bodyQuotes&quot;&gt;”&lt;/span&gt; 안내&lt;/a&gt;"
+                  aria-label="17번 주석 보기">
+                  <sup>17)</sup>
+                </button> 네이버는 2024년 11월부터 넷플릭스를 네이버플러스 멤버십의 선택형 혜택으로 제공하고 있다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://www.navercorp.com/media/pressReleasesDetail?seq=32061&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;네이버 (2024. 9. 30). 11월부터 네이버플러스 멤버십에서 넷플릭스 볼 수 있다…네이버, 멤버십 혜택 외연 확장 지속, 공식 보도자료&lt;/a&gt;"
+                  aria-label="18번 주석 보기">
+                  <sup>18)</sup>
+                </button> 티빙·웨이브는 콘텐츠와 가입자 기반의 결합을 통해 OTT 자체의 경쟁력을 강화하려는 모델로, 디즈니형과 유사한 측면이 있다. 반면 네이버·넷플릭스는 기존 플랫폼의 고객관계를 활용하여 OTT를 유통하는 모델로, 버라이즌형에 상대적으로 가깝다. 다만 티빙·웨이브는 상품 결합을 넘어 통합 광고 플랫폼을 출범시키는 등 광고사업으로 협력을 확대하고 있다는 점에서 차이가 있다.<button
+                  type="button"
+                  class="note-link"
+                  data-note="&lt;a class=&quot;is-link&quot; href=&quot;https://cjnews.cj.net/?p=69158&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;CJ 뉴스룸 (2025. 9. 19). 티빙 x 웨이브, 국내 최대 OTT 광고 플랫폼 출범&lt;/a&gt;"
+                  aria-label="19번 주석 보기">
+                  <sup>19)</sup>
+                </button> 결국 전자는 콘텐츠 경쟁력과 광고 수익성 강화에, 후자는 멤버십 고객의 유지와 유통경로 확대에 무게를 두고 있다. 따라서 국내 번들 전략의 성과 역시 가입자 증가보다는 각 사업모델의 목적에 따라 고객 유지율, 광고 수익성, 멤버십 이용 확대 등 차별화된 지표로 평가할 필요가 있다.
+                <br><br>
+                이제 국내 사업자들은 저마다 가진 강점을 어떻게 연결할 것인지 고민할 때이다. 그동안 콘텐츠 기업은 IP와 시청 데이터를, 통신사는 청구·결제와 장기 가입 관계를, 포털·커머스 플랫폼은 일상적인 소비자 접점을 보유해 왔다. 이제 어느 영역을 직접 관리하고, 어떤 기능을 제휴를 통해 보완하는지에 따라 수익 구조와 고객 관리의 주도권이 달라질 수 있다. 특히 외부 플랫폼을 통해 가입자를 확보할 때에는 정산 조건, 고객정보에 대한 접근·이용 범위, 화면 내 노출 조건을 함께 고려해야 할 것이다.
+                <br><br>
+                결국 재번들링의 성패는 묶음 상품의 개수나 할인율보다 소비자에게 편리한 이용과 폭넓은 선택을 제공하면서, 사업자에게는 지속 가능한 수익구조를 만들어 낼 수 있느냐에 달려 있다. 이제 국내 시장도 <span class="bodyQuotes">‘</span>다시 묶는 방법<span class="bodyQuotes">’</span>을 넘어 <span class="bodyQuotes">‘</span>함께 묶인 이후의 고객 경험과 수익을 설계하는 방법<span class="bodyQuotes">’</span>을 모색할 때이다.
+              </p>
+            </div>
+          </section>
+
+          <!-- 참고문헌 -->
+          <div class="reference-list">
+            <p class="reference-title">참고문헌</p>
+
+            <ul class="reference-items">
+              <li>
+                <a href="https://www.navercorp.com/media/pressReleasesDetail?seq=32061"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  네이버(2024. 9. 30). 11월부터 네이버플러스 멤버십에서 넷플릭스 볼 수 있다…네이버, 멤버십 혜택 외연 확장 지속.
+                </a>
+              </li>
+
+              <li>
+                <a href="https://cjnews.cj.net/하나의-구독-두-배의-즐거움-티빙-웨이브와-더/"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  CJ ENM (2025. 6. 16). 하나의 구독, 두 배의 즐거움: 티빙, 웨이브와 <span class="bodyQuotes">‘</span>더블 이용권<span class="bodyQuotes">’</span> 출시.
+                </a>
+              </li>
+
+              <li>
+                <a href="https://mkt.tving.com/2025twdouble/index.html"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  TVING (2025). 「티빙×웨이브 더블 이용권」 안내.
+                </a>
+              </li>
+
+              <li>
+                <a href="https://cjnews.cj.net/?p=69158"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  CJ 뉴스룸 (2025. 9. 19). 티빙 x 웨이브, 국내 최대 OTT 광고 플랫폼 출범.
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.apple.com/apple-tv/"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Apple (2026. 11월 기준). <span class="bodyQuotes">“</span>Apple TV.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://corporate.comcast.com/press/releases/comcast-introduces-peacock-netflix-and-apple-tv-streaming-bundle"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Comcast (2024. 5. 21). <span class="bodyQuotes">“</span>Comcast Introduces Peacock, Netflix and Apple TV+ Streaming Bundle.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://corporate.comcast.com/press/releases/xfinity-streamstore-smarter-simpler-way-discover-manage-enjoy-entertainment"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Comcast (2025. 7. 23). <span class="bodyQuotes">“</span>Comcast’s Xfinity Unveils StreamStore: A Smarter, Simpler Way to Discover, Manage and Enjoy Entertainment.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.cmcsa.com/node/45486"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Comcast (2026. 4. 23). <span class="bodyQuotes">“</span>Comcast Reports 1st Quarter 2026 Results.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.cmcsa.com/node/45906"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Comcast (2026. 7. 23). <span class="bodyQuotes">“</span>Comcast Reports 2nd Quarter 2026 Results.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.cmcsa.com/news-releases/news-release-details/comcast-reports-3rd-quarter-2026-results"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Comcast (2026. 10. 22). <span class="bodyQuotes">“</span>Comcast Reports 3rd Quarter 2026 Results.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.deloitte.com/us/en/insights/industry/technology/digital-media-trends-consumption-habits-survey.html"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Deloitte (2026. 3. 25). <span class="bodyQuotes">“</span>2026 Digital Media Trends: Capturing always-on fandom between releases and seasons,<span class="bodyQuotes">”</span> 20th ed.
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.disneyplus.com/explore/articles/disney-plus-app-redesign-new-features"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Disney+ (2026. 1. 9). <span class="bodyQuotes">“</span>The Disney+ App Just Got an Update, Here’s What You Need to Know.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://help.hulu.com/article/hulu-link-hulu-profile"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Hulu Help Center (2026. 5. 19). <span class="bodyQuotes">“</span>How to link your Hulu profile to Disney+.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://help.netflix.com/en/node/24926?country=US"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Netflix (2026. 11월 기준). <span class="bodyQuotes">“</span>Plans and Pricing.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.peacocktv.com/plans/all-monthly"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Peacock (2026. 11월 기준). <span class="bodyQuotes">“</span>Choose a Plan.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://thewaltdisneycompany.com/news/espn-on-disney-plus/"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  The Walt Disney Company (2024. 12. 4). <span class="bodyQuotes">“</span>Game On: ESPN on Disney+ Launches Today.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448926000018/fy2026_q1xprxex991.htm"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  The Walt Disney Company (2026. 2. 2). <span class="bodyQuotes">“</span>First Quarter Earnings for Fiscal 2026,<span class="bodyQuotes">”</span> SEC Exhibit 99.1.
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448926000036/fy2026_q2xprxex991.htm"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  The Walt Disney Company (2026. 5. 6). <span class="bodyQuotes">“</span>Second Quarter Earnings for Fiscal 2026,<span class="bodyQuotes">”</span> SEC Exhibit 99.1.
+                </a>
+              </li>
+
+              <li>
+                <a href="https://thewaltdisneycompany.com/news/hulu-disney-plus-profile-linking/"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  The Walt Disney Company (2026. 5. 19). <span class="bodyQuotes">“</span>Hulu on Disney+ Just Got Better: What You Need to Know About Linking Your Profiles.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://thewaltdisneycompany.com/news/viewer-first-premium-advertising/"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  The Walt Disney Company (2026. 6. 4). <span class="bodyQuotes">“</span>Scaling Viewer-First Premium Advertising on Disney+.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.sec.gov/Archives/edgar/data/1744489/000174448926000056/fy2026_q3xerxex991.htm"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  The Walt Disney Company (2026. 8. 5). <span class="bodyQuotes">“</span>Third Quarter Earnings for Fiscal 2026,<span class="bodyQuotes">”</span> SEC Exhibit 99.1.
+                </a>
+              </li>
+
+              <li>
+                <a href="https://s206.q4cdn.com/979796730/files/doc_events/2026/Aug/05/q3-fy26-earnings-transcript.pdf"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  The Walt Disney Company (2026. 8. 5). <span class="bodyQuotes">“</span>Q3 FY26 Earnings Conference Call Transcript.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.verizon.com/digital/nsa/nos/ui/products/producthub/newpdp/disneyhuluespnbundle_perk"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Verizon (2026. 11월 기준). <span class="bodyQuotes">“</span>Disney+, Hulu, &amp; ESPN+.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.verizon.com/nextgendigital/nos/products-perks/pdp/netflix-hbo-max-bundle"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Verizon (2026. 11월 기준). <span class="bodyQuotes">“</span>Netflix &amp; HBO Max (With Ads).<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.xfinity.com/billchanges"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  Xfinity (2026. 11월 기준). <span class="bodyQuotes">“</span>Bill Changes.<span class="bodyQuotes">”</span>
+                </a>
+              </li>
+            </ul>
           </div>
-        </section>
 
-        <!-- Section 4 -->
-        <section class="section-block">
-          <div class="subtitle-wrap">
-            <div class="subtitle-bar-desktop"></div>
-
-            <div class="subtitle-inner">
-              <div class="subtitle-bar-mobile"></div>
-              <div class="subtitle-text">광고형 요금제 확산과 ‘시간’의 가치</div>
+          <!-- Author Profile -->
+          <div class="author-profile">
+            <img alt="정애리" class="author-img" src="./img/manuscript10/profile.jpg"/>
+            <div class="author-info">
+              <p class="author-name">
+                정애리
+                <br class="mobile-br">
+                <span class="author-affiliation">
+                  (중앙대학교 첨단영상대학원 겸임교수)
+                </span>
+                </br>
+              </p>
+              <p class="author-description">
+                중앙대학교 언론학 박사를 받고 FSU(Florida State University)에서 박사후과정을 수료했다. 중앙대학교 예술대학원 객원교수, 중앙대학교 콘텐츠 디자인 연구소 학술연구교수, 중앙대학교 문화예술교육원 전문연구원을 역임했다. 주요 연구로 「방송콘텐츠 진흥사업 실태조사」(2025), 「콘텐츠 산업 노동환경 조사 연구」(2025), 「콘텐츠 산업 일자리 창출 방안 연구」(2024), 「방송 포맷(K-포맷) 해외 불법 복제 및 유통현황 조사」(2023), 「방송영상콘텐츠 제작산업 경쟁현황 분석 연구」(2021) 등이 있다.
+              </p>
             </div>
           </div>
-
-          <div class="section-body">
-            <p class="paragraph">
-              본고에서 살펴본 디커플링 현상은 이용자 규모가 크다고 반드시 많은 시청시간을 확보하는 것은 아니며, 이용자 규모가 작더라도 반복 방문과 장시간 시청을 통해 높은 시간 점유율을 가질 수 있음을 보여주었다. 이러한 차이는 광고형 요금제가 확산되는 오늘날의 OTT 환경에서 더욱 중요해지고 있다. KT 나스미디어의 <span class="bodyQuotes">‘</span>2026 인터넷 이용자 조사(NPR)<span class="bodyQuotes">’</span>에 따르면, OTT 구독자 조사표본(n=1,494)의 59.7%가 광고형 요금제를 이용하고 있으며, 넷플릭스 구독자와 티빙 구독자 중 광고형 요금제 이용 비중도 각각 54.2%, 53.5%로 과반을 차지했다.<button
-                type="button"
-                class="note-link"
-                data-note="KT 나스미디어 (2026). 2026 인터넷 이용자 조사(NPR)"
-                data-url="https://www.nasmedia.co.kr/정기보고서/2026-03-npr-usersurvey-insight/"
-                aria-label="12번 주석 보기">
-                <sup>12)</sup>
-              </button> 광고형 요금제가 주요 구독 방식으로 자리 잡으면서 사용시간은 단순한 체류지표를 넘어 광고 노출 기회를 확대하고 시청 데이터를 축적할 수 있는 경제적 자원으로 부상하고 있다.<br><br>
-
-              따라서 정책기관과 산업계가 앞으로 함께 고려해야 할 것은 MAU 지수가 아니라 이용자 규모, 사용시간, 재방문, 광고형 요금제 이용률, 광고매출, 크로스디바이스 시청을 연결한 복수 지표들이다. 사업자는 이용자 유입과 체류를 구분해 관리하고, 광고주는 도달 규모뿐 아니라 이용 빈도와 체류 수준까지 포함해서 매체의 가치를 판단할 필요가 있다. 정책기관 역시 OTT의 기존 방송광고 대체·보완 효과와 그 영향력을 파악하기 위해서는, 이용자 규모뿐 아니라 시청시간과 광고매출을 함께 조사하는 정례 통계체계를 마련할 필요가 있다. OTT 경쟁의 중심이 이용자 규모에서 이용시간으로 이동하고 있다면, 시장을 측정하고 평가하는 방식도 이에 맞춰 달라져야 하기 때문이다.
-            </p>
-          </div>
-        </section>
-
-
-
-        <!-- Reference List Section -->
-        <div class="reference-list">
-          <div class="reference-title">참고문헌</div>
-
-          <ol class="reference-items hanging-indent">
-            <li><a href="https://www.kmcc.go.kr/user.do?boardId=1027&boardSeq=67915&dc=K02060100&mode=view&page=A02060100" target="_blank">방송미디어통신위원회 (2026). 2025 방송매체 이용행태조사 보고서</a></li>
-            <li><a href="https://www.ajunews.com/view/20260507153358953" target="_blank">아주경제 (2026. 5. 7). [컨콜] 티빙, 1분기 영업손실 192억원…전년 比 65억원↓</a></li>
-            <li><a href="https://www.wiseapp.co.kr/insight/detail/807/ott-market-share-user-rankings" target="_blank">와이즈앱·리테일 (2026. 6. 23). OTT 서비스 시장 연평균 6% 성장...넷플릭스 점유율 38%.</a></li>
-            <li><a href="https://news.coupang.com/archives/54044/" target="_blank">쿠팡 (2025. 6. 19). 쿠팡플레이, 올 8월 ‘스포츠 패스’ 일반 회원 요금제 출시</a></li>
-            <li><a href="https://cjnews.cj.net/category/press-center/보도자료/page/19/?aff=9" target="_blank">CJ ENM (2025. 2. 12). CJ ENM 2024년 매출 5조 2,314억원 영업이익 1,045억원 달성, 사업 경쟁력 강화로 흑자 전환 성공, CJ 뉴스룸</a></li>
-            <li>CJ ENM (2026. 8. 6). “2분기 매출 1조 2,033억원, 영업이익 334억원…IP 경쟁력 및 플랫폼 외형 확장 통해 수익성 개선.”; CJ ENM (2026. 8. 6). 2026년 2분기 실적발표 컨퍼런스콜</li>
-            <li><a href="https://cjnews.cj.net/?p=78724&ut" target="_blank">CJ ENM (2026. 8. 7). IP·플랫폼 모두 잡은 CJ ENM, 글로벌 공략 속도낸다</a></li>
-            <li><a href="https://kisdi.re.kr/bbs/view.do?bbsSn=114726&key=m2101113055776" target="_blank">KISDI (2025). 2024 인터넷 동영상 콘텐츠 유통과 소비에 관한 실태조사</a></li>
-            <li><a href="https://www.nasmedia.co.kr/정기보고서/2026-03-npr-usersurvey-insight/" target="_blank">KT 나스미디어 (2026). 2026 인터넷 이용자 조사(NPR)</a></li>
-          </ol>
         </div>
 
+        <!-- Post Navigator -->
+        <div class="post-navigator">
+          <a href="./data_2.html" class="post-nav prev">
+            <div class="post-nav-header">
+              <img src="./img/assets/arrow.png" alt="화살표" class="arrow" />
+              <p>이전 글</p>
+            </div>
 
+            <span class="post-nav-title">드라마 2차 유통 시대<br class="pc-br">: OTT에서 TV로, 한 번 공개된 드라마는 다시 살아날 수 있을까</span>
+          </a>
 
-        <!-- Author Profile -->
-        <div class="author-profile">
-          <img src="./img/manuscript10/profile.png" alt="정애리" class="author-img" />
-          <div class="author-info">
-            <p class="author-name">
-              정애리
-              <br class="mobile-br" />
-              <span class="author-affiliation">(중앙대학교 첨단영상대학원 겸임교수)</span>
-            </p>
-            <p class="author-description">
-              중앙대학교 언론학 박사를 받고 FSU(Florida State University)에서 박사후과정을 수료했다. 중앙대학교 예술대학원 객원교수, 중앙대학교 콘텐츠 디자인 연구소 학술연구교수, 중앙대학교 문화예술교육원 전문연구원을 역임했다. 주요 연구로 「방송콘텐츠 진흥사업 실태조사」(2025), 「콘텐츠 산업 노동환경 조사 연구」(2025), 「콘텐츠 산업 일자리 창출 방안 연구」(2024), 「방송 포맷(K-포맷) 해외 불법 복제 및 유통현황 조사」(2023), 「방송영상콘텐츠 제작산업 경쟁현황 분석 연구」(2021) 등이 있다.
-            </p>
-          </div>
+          <div class="post-nav-div"></div>
+
+          <div class="last-nav"></div>
         </div>
-
       </div>
+    </div>
 
-      <!-- Post Navigator -->
-      <div class="post-navigator">
-        <a href="./data_2.html" class="post-nav prev">
-          <div class="post-nav-header">
-            <img src="./img/assets/arrow.png" alt="화살표" class="arrow" />
-            <p>이전 글</p>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+
+        <!-- 상단: 로고와 설명 -->
+        <div class="footer-top-wrap">
+          <div class="footer-top">
+
+            <div class="footer-logo-wrap">
+              <img src="./img/assets/kocca-logo-white.png" alt="한국콘텐츠진흥원 로고" class="footer-logo" />
+
+              <p class="footer-description">
+                &lt;방송영상·OTT 트렌드&gt;에 실린 글과 사진은 한국콘텐츠진흥원의 허가 없이 사용할 수 없으며,
+                <br class="footer-hidden" />
+                본지의 내용은 필자 개인의 의견으로 한국콘텐츠진흥원의 공식 견해가 아닙니다.
+              </p>
+            </div>
+
+            <!-- 발행 정보 -->
+            <div class="footer-info">
+              <div class="footer-info-group">
+                <div>
+                  <p>발행인</p>
+                  <p>김윤지(한국콘텐츠진흥원 원장)</p>
+                </div>
+
+                <div>
+                  <p>발행일</p>
+                  <p>2026년 11월 30일</p>
+                </div>
+
+                <div>
+                  <p>발행처</p>
+
+                  <div style="display: flex; gap:4px; flex-direction: column;">
+                    <p>한국콘텐츠진흥원</p>
+                    <p>전라남도 나주시 교육길 35</p>
+                    <p>T. 1566-1114</p>
+                    <p>https://www.kocca.kr</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-info-group">
+                <div>
+                  <p>기획·편집</p>
+
+                  <div style="display: flex; gap:4px; flex-direction: column;">
+                    <p>한국콘텐츠진흥원 정책연구본부 산업정책팀</p>
+                    <p>(주)컬쳐미디어랩</p>
+                  </div>
+                </div>
+
+                <div>
+                  <p>기획위원</p>
+
+                  <div style="display: flex; gap:4px; flex-direction: column;">
+                    <p>이성민(한국방송통신대학교 미디어영상학과 부교수)</p>
+                    <p>장민지(경남대학교 미디어영상학과 조교수)</p>
+                    <p>지인해(신한투자증권 연구위원)</p>
+                  </div>
+                </div>
+
+                <div>
+                  <p>ISSN</p>
+
+                  <div>
+                    <p>3091-6771(online)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <span class="post-nav-title">글로벌 OTT의 선택이 달라졌다:<br class="pc-br"> K-콘텐츠 소비에서 K-컬처 활용으로</span>
+
+          <div class="footer-buttons">
+            <a href="./download/2026_방송영상&OTT트렌드_Vol4_PDF_최종본.pdf"
+              class="footer-button-outline"
+              download="2026_방송영상&OTT트렌드_Vol4_PDF">2026 Vol.4 (11월호) PDF 다운받기</a>
+
+              <a href="https://www.kocca.kr/kocca/common/Mailling.do?menuNo=204918"
+                target="_blank"
+                class="footer-button-filled">구독 신청하기</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Korea Creative Content Agency. All rights reserved.</p>
+
+          <img src="./img/assets/new_img_opentype04.png"
+          alt="공공누리 제4유형 : 출처표시 + 상업적 이용금지 + 변경금지" />
+        </div>
+      </div>
+    </footer>
+
+    <!-- 상/하단 이동 버튼 -->
+    <div class="page-anchor-buttons">
+      <button type="button" class="page-anchor-btn page-top-btn" onclick="scrollToTop()" aria-label="상단으로 이동">
+        <img src="./img/assets/TopArrow.png" alt="" />
+      </button>
+
+      <button type="button" class="page-anchor-btn page-bottom-btn" onclick="scrollToBottom()" aria-label="하단으로 이동">
+        <img src="./img/assets/TopArrow.png" alt="" />
+      </button>
+    </div>
+
+    <!-- 하단 플로팅 바 -->
+    <nav class="article-floating-nav" aria-label="게시글 이동">
+      <div class="article-floating-nav-inner">
+        <a href="./data_2.html" class="floating-nav-btn prev">
+          <img src="./img/assets/arrow.png" alt="" width="24" height="24">
+          <span>이전글</span>
         </a>
 
-        <div class="post-nav-div"></div>
-
-        <div class="last-nav"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-container">
-
-      <!-- 상단: 로고와 설명 -->
-      <div class="footer-top-wrap">
-        <div class="footer-top">
-
-          <div class="footer-logo-wrap">
-            <img src="./img/assets/kocca-logo-white.png" alt="한국콘텐츠진흥원 로고" class="footer-logo" />
-
-            <p class="footer-description">
-              &lt;방송영상·OTT 트렌드&gt;에 실린 글과 사진은 한국콘텐츠진흥원의 허가 없이 사용할 수 없으며,
-              <br class="footer-hidden" />
-              본지의 내용은 필자 개인의 의견으로 한국콘텐츠진흥원의 공식 견해가 아닙니다.
-            </p>
-          </div>
-
-          <!-- 발행 정보 -->
-          <div class="footer-info">
-            <div class="footer-info-group">
-              <div>
-                <p>발행인</p>
-                <p>김윤지(한국콘텐츠진흥원 원장)</p>
-              </div>
-              <div>
-                <p>발행일</p>
-                <p>2026년 11월 30일</p>
-              </div>
-              <div>
-                <p>발행처</p>
-                <div style="display: flex; gap:4px; flex-direction: column;">
-                  <p>한국콘텐츠진흥원</p>
-                  <p>전라남도 나주시 교육길 35</p>
-                  <p>T. 1566-1114</p>
-                  <p>https://www.kocca.kr</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="footer-info-group">
-              <div>
-                <p>기획·편집</p>
-                <div style="display: flex; gap:4px; flex-direction: column;">
-                  <p>한국콘텐츠진흥원 정책연구본부 산업정책팀</p>
-                  <p>(주)컬쳐미디어랩</p>
-                </div>
-              </div>
-
-              <div>
-                <p>기획위원</p>
-                <div style="display: flex; gap:4px; flex-direction: column;">
-                  <p>이성민(한국방송통신대학교 미디어영상학과 부교수)</p>
-                  <p>장민지(경남대학교 미디어영상학과 조교수)</p>
-                  <p>지인해(신한투자증권 연구위원)</p>
-                </div>
-              </div>
-
-              <div>
-                <p>ISSN</p>
-                <div>
-                  <p>3091-6771(online)</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer-buttons">
-          <a href="./download/2026_방송영상&OTT트렌드_Vol3_PDF_최종본.pdf" class="footer-button-outline"
-            download="2026_방송영상&OTT트렌드_Vol3_PDF">2026 Vol.4 (11월호) PDF 다운받기</a>
-          <a href="https://www.kocca.kr/kocca/common/Mailling.do?menuNo=204918" target="_blank"
-            class="footer-button-filled">구독 신청하기</a>
+        <div class="floating-issue-info">
+          <span class="issue-label">2026 Vol.4 (11월호)</span>
         </div>
       </div>
+    </nav>
 
+    <script src="./js/utils.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/note-tooltip.js"></script>
 
-      <div class="footer-bottom">
-        <p>© 2026 Korea Creative Content Agency. All rights reserved.</p>
-        <img src="./img/assets/new_img_opentype04.png" alt="공공누리 제4유형 : 출처표시 + 상업적 이용금지 + 변경금지" />
-      </div>
-    </div>
-  </footer>
-
-  <!-- 상/하단 이동 버튼 -->
-  <div class="page-anchor-buttons">
-    <button type="button" class="page-anchor-btn page-top-btn" onclick="scrollToTop()" aria-label="상단으로 이동">
-      <img src="./img/assets/TopArrow.png" alt="" />
-    </button>
-
-    <button type="button" class="page-anchor-btn page-bottom-btn" onclick="scrollToBottom()" aria-label="하단으로 이동">
-      <img src="./img/assets/TopArrow.png" alt="" />
-    </button>
-  </div>
-
-  <!-- 하단 플로팅 바 -->
-  <nav class="article-floating-nav" aria-label="게시글 이동">
-    <div class="article-floating-nav-inner">
-      <a href="./data_2.html" class="floating-nav-btn prev">
-        <img src="./img/assets/arrow.png" alt="" width="24" height="24">
-        <span>이전글</span>
-      </a>
-
-      <div class="floating-issue-info">
-        <span class="issue-label">2026 Vol.4 (11월호)</span>
-      </div>
-    </div>
-  </nav>
-  <script src="./js/utils.js"></script>
-  <script src="./js/menu.js"></script>
-  <script src="./js/note-tooltip.js"></script>
-</body>
+  </body>
 
 </html>
