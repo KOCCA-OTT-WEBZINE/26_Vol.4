@@ -30,20 +30,20 @@ const spotlightItem = {
 
 const trendItem = {
   0: {
-    title: "작품 뒤의 작품: OTT의 새로운 상품, 비하인드 다큐멘터리",
+    title: "디지털에서 태어나 방송으로, 검증 순서가 뒤집힌 포맷 산업",
     authors: [
       {
-        name: "장민지",
-        affiliation: "경남대학교 미디어영상학과 부교수",
+        name: "박원우",
+        affiliation: "dI turn 대표",
       },
     ],
   },
   1: {
-    title: "서로의 시장에서 하나의 제작 생태계로:<br> 한일 콘텐츠 공동시장화와 방송영상 협력의 새로운 단계",
+    title: "AI 기술, 대하드라마 &lt;문무&gt;의 완성도를 높이다",
     authors: [
       {
-        name: "이혜은",
-        affiliation: "한국콘텐츠진흥원 도쿄비즈니스센터장",
+        name: "이호",
+        affiliation: "KBS 드라마센터 CP",
       },
     ],
   },
