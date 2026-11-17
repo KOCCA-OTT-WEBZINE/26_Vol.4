@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       sectionName: "스포트라이트",
       theme: "수용자와 플랫폼",
-      item: "다양한 시도로 글로벌 시장의 문을 두드린다,<br> &lt;WOWPOINT&gt; 양유민 대표",
+      item: "영상 콘텐츠를 둘러싼 플랫폼 전쟁",
       img: "./img/manuscript1/banner.png",
       imgMobile: "./img/manuscript1/banner-m.png",
       bgPosition: "center center",
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       sectionName: "트렌드 하이라이트",
       theme: "",
-      item: "작품 뒤의 작품:<br> OTT의 새로운 상품, 비하인드 다큐멘터리",
+      item: "디지털에서 태어나 방송으로,<br>검증 순서가 뒤집힌 포맷 산업",
       img: "./img/manuscript4/banner.png",
       imgMobile: "./img/manuscript4/banner-m.png",
       bgPosition: "right center",
@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       sectionName: "피플 인사이트",
-      theme: "기술 인프라가 콘텐츠와 만날 때",
-      item: "‘AI 혁신 선도 프로젝트’의 성과와 과제:<br> CJ 4DPLEX 방준식 대표 인터뷰",
-      img: "./img/manuscript7/banner.jpg",
-      imgMobile: "./img/manuscript7/banner-m.jpg",
+      theme: "플랫폼 시대, 창작자가 수용자를 만나는 방법",
+      item: "<신입사원 강회장>의 고혜진 감독",
+      img: "./img/manuscript7/banner.png",
+      imgMobile: "./img/manuscript7/banner-m.png",
       bgPosition: "center center",
       bgPositionMobile: "center center",
     },

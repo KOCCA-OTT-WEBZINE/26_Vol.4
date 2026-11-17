@@ -60,11 +60,11 @@ const trendItem = {
 
 const peopleItem = {
   0: {
-    title: "‘AI 혁신 선도 프로젝트’의 성과와 과제",
+    title: "플랫폼 시대, 창작자가 수용자를 만나는 방법,<br>&lt;신입사원 강회장&gt;의 고혜진 감독",
     authors: [
       {
-        name: "방준식",
-        affiliation: "CJ 4DPLEX 대표",
+        name: "고혜진",
+        affiliation: "감독",
       },
     ],
   },
