@@ -34,7 +34,7 @@ const trendItem = {
     authors: [
       {
         name: "박원우",
-        affiliation: "dI turn 대표",
+        affiliation: "Creative Mate dI turn 대표 / 콘텐츠 크리에이터",
       },
     ],
   },

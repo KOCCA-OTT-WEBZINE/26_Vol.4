@@ -44,6 +44,13 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   vertical-align: baseline;
 }
 
+.bodyQuotes {
+  font-family: 'GmarketSans', sans-serif;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+
 /* =====================
    Header Styles
 ===================== */
@@ -1514,19 +1521,16 @@ div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a
   gap: 4px;
 }
 
-.global-flag-na { border: 1px solid #e6eef8; }
-.global-flag-la { border: 1px solid #e6f3ee; }
+
 .global-flag-eu {
   flex-wrap: wrap;
   justify-content: flex-end;
-  border: 1px solid #eee8f8;
 }
 .global-flag-as {
   max-width: 170px;
   justify-content: flex-end;
-  border: 1px solid #f4e7df;
+
 }
-.global-flag-oc { border: 1px solid #e3f2f7; }
 
 .global-flag {
   height: 22px;
