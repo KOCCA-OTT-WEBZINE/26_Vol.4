@@ -9,11 +9,11 @@ const spotlightItem = {
     ],
   },
   1: {
-    title: "비용효율 콘텐츠 시대: 우리는 지금 K-예능 시대에 산다!",
+    title: "돈을 따라가면 보이는 주목(Attention)의 방정식:<br>오디언스 타깃팅과 수익화 전략",
     authors: [
       {
-        name: "지인해",
-        affiliation: "신한투자증권 연구위원",
+        name: "이혜미",
+        affiliation: "제일기획 미디어 퍼포먼스 1팀 프로",
       },
     ],
   },
@@ -96,7 +96,7 @@ const dataPointItem = {
     title: "[2026년 4분기] 데이터로 읽는 글로벌 OTT 콘텐츠 소비 취향",
   },
   1: {
-    title: "글로벌 OTT의 선택이 달라졌다:<br> K-콘텐츠 소비에서 K-컬처 활용으로",
+    title: "드라마 2차 유통 시대:<br>OTT에서 TV로, 한 번 공개된 드라마는 다시 살아날 수 있을까",
     authors: [
       {
         name: "김미선",
@@ -105,7 +105,7 @@ const dataPointItem = {
     ],
   },
   2: {
-    title: "국내 OTT 시장의 디커플링 현상:<br> 이용자 규모보다 ‘시간’을 봐야 하는 이유",
+    title: "콘텐츠보다 플랫폼인가?:<br>2026년 미국 OTT 시장의 재번들링과 고객 접점 경쟁",
     authors: [
       {
         name: "정애리",
